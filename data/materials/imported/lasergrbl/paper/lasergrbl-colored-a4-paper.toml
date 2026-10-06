@@ -1,0 +1,14 @@
+id = "lasergrbl-colored-a4-paper"
+name = "Colored A4 Paper"
+category = "paper"
+
+[[recipes]]
+id = "algo-alm-22bd-22w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 30000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "5b887b0c-3d4b-4be8-8236-8cd14ee07676 (Algo ALM-22BD (22W))" }

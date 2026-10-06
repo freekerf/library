@@ -1,0 +1,26 @@
+id = "lasergrbl-stainless-steel-0-1mm"
+name = "Stainless Steel"
+category = "metal"
+thickness_mm = 0.1
+
+[[recipes]]
+id = "longer-b1-30w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 400
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "315e4bd2-6633-45fd-b25e-185357e7eb72 (Longer B1 30W)" }
+
+[[recipes]]
+id = "longer-b1-40w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 500
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "89f0a4c1-a4ae-4123-817e-12309bab9b0d (Longer B1 40W)" }

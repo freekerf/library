@@ -1,0 +1,172 @@
+id = "lasergrbl-powder-coated-metal"
+name = "Powder Coated Metal"
+category = "coated_metal"
+
+[[recipes]]
+id = "leon3d-l40-5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "4b48d2c9-315d-433a-bbf5-3acd1591da41 (LEON3D L40 (5.5W))" }
+
+[[recipes]]
+id = "leon3d-l60-10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "71c63a00-c68d-42e4-9a5e-4cf62879dd04 (LEON3D L60 (10w))" }
+
+[[recipes]]
+id = "longer-ray5-10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 100
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "f1258342-636d-4d50-9b5a-6ba777e9a011 (Longer RAY5 10W)" }
+
+[[recipes]]
+id = "longer-ray5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 500
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "0f597807-329c-4221-bd97-362cb152a669 (Longer RAY5 5W)" }
+notes = "dark color.It need to be adjusted based different colors."
+
+[[recipes]]
+id = "longer-ray5-or-b1-20w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 400
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "13b342e2-21d9-41a5-aff0-dbbb81712c11 (Longer RAY5 or B1 20W)" }
+
+[[recipes]]
+id = "mecolour-m10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 6000
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "4d83ac8c-9bcf-4dbd-a01e-9480ca8b7a3d (MECOLOUR M10W)" }
+
+[[recipes]]
+id = "mecolour-m6w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 6.0 }
+speed_mm_min = 5000
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "47d9ea25-82e2-45d4-b5ab-fc8024ba349b (MECOLOUR M6W)" }
+
+[[recipes]]
+id = "ortur-lu15w-4-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 4.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "9f10aef9-84be-4931-90a9-15cbea1a0052 (Ortur LU15W (4.5W))" }
+notes = "Engraved on powder coating. It need to be adjusted based on different finishings and colors."
+
+[[recipes]]
+id = "ortur-lu20w-5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "7b62a276-944b-4ca7-bf1d-731c0e9b9734 (Ortur LU20W (5.5W))" }
+notes = "Engraved on powder coating. It need to be adjusted based on different finishings and colors."
+
+[[recipes]]
+id = "ortur-lu7w-1-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 1.5 }
+speed_mm_min = 2000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "59b2af01-4f0e-469e-8708-d0f9d21fcdf3 (Ortur LU7W (1.5W))" }
+notes = "Engraved on powder coating. It need to be adjusted based on different finishings and colors."
+
+[[recipes]]
+id = "two-trees-ts2-10-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 6000
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "9734f4da-aec4-4b33-8321-0ed6b672d8d3 (Two Trees TS2-10)" }
+
+[[recipes]]
+id = "two-trees-ts2-55-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 5000
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "42ccfe8e-87ff-4bc9-b7af-a1f4df880b5f (Two Trees TS2-55)" }
+
+[[recipes]]
+id = "two-trees-ts3-10-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 6000
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "c2601812-8a20-4ff6-8ff8-9d7670823d91 (Two Trees TS3-10)" }
+
+[[recipes]]
+id = "two-trees-ts3-55-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 5000
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "79c25b95-bed4-4505-b003-92c4361af8f0 (Two Trees TS3-55)" }
+
+[[recipes]]
+id = "two-trees-tts-55-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 5000
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "d977ba9b-ff27-4372-9fae-2aab37b7d78f (Two Trees TTS-55)" }

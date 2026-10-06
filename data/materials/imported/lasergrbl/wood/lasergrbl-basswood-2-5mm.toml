@@ -1,0 +1,15 @@
+id = "lasergrbl-basswood-2-5mm"
+name = "Basswood"
+category = "wood"
+thickness_mm = 2.5
+
+[[recipes]]
+id = "atomstack-m50-10w-a10-s10-x7-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 700
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "041c0454-8e51-413f-99c5-46557200c4d6 (Atomstack M50 10W (A10/S10/X7))" }

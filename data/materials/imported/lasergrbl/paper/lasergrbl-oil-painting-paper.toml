@@ -1,0 +1,14 @@
+id = "lasergrbl-oil-painting-paper"
+name = "Oil painting paper"
+category = "paper"
+
+[[recipes]]
+id = "atomstack-x20-pro-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 25.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "8b456e34-7a83-454c-9f79-2f5cf0436883 (Atomstack X20 Pro)" }

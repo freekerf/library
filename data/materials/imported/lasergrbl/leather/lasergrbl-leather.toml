@@ -1,0 +1,283 @@
+id = "lasergrbl-leather"
+name = "Leather"
+category = "leather"
+
+[[recipes]]
+id = "algo-alm-22bd-22w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 30000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "42c9d21c-b986-44de-a85e-8e027ef6e6af (Algo ALM-22BD (22W))" }
+
+[[recipes]]
+id = "atomstack-m50-10w-a10-s10-x7-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 18.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "9179afa5-b778-4a1b-9887-25062f6478a1 (Atomstack M50 10W (A10/S10/X7))" }
+
+[[recipes]]
+id = "atomstack-x20-pro-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 20.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "2c942c4a-fd73-4c7d-aed3-10f876945448 (Atomstack X20 Pro)" }
+
+[[recipes]]
+id = "comgo-z1-10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 2000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "584f9863-ae20-4875-be13-3fda4b894af0 (Comgo Z1 10W)" }
+
+[[recipes]]
+id = "comgo-z1-10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 4500
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "c77f8126-b73d-4c42-a871-db71822ffe74 (Comgo Z1 10W)" }
+
+[[recipes]]
+id = "comgo-z1-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 1000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "581f9863-ae20-4875-be13-3fda4b894af0 (Comgo Z1 5W)" }
+
+[[recipes]]
+id = "comgo-z1-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 2000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "c77f3126-b73d-4c42-a871-db71822ffe74 (Comgo Z1 5W)" }
+
+[[recipes]]
+id = "leon3d-l40-5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 30.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "78fd4a83-48df-4c3b-8a13-5f7f9674e3fe (LEON3D L40 (5.5W))" }
+
+[[recipes]]
+id = "leon3d-l60-10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 12.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "ab763444-3fc5-4194-be9f-d6569bed5e97 (LEON3D L60 (10w))" }
+
+[[recipes]]
+id = "longer-b1-30w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 6000
+power_min_pct = 0.0
+power_max_pct = 30.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "95e942d9-dcff-483d-b778-aedf566916c6 (Longer B1 30W)" }
+
+[[recipes]]
+id = "longer-b1-40w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 10000
+power_min_pct = 0.0
+power_max_pct = 30.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "4be64ebb-53e1-4b67-9898-ca29c8abbb23 (Longer B1 40W)" }
+
+[[recipes]]
+id = "longer-ray5-10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 20.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "cebd544c-6d75-45cc-9dec-5070836dba53 (Longer RAY5 10W)" }
+notes = "Light color. It need to be adjusted based on different colors."
+
+[[recipes]]
+id = "longer-ray5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "8f530785-347e-40f1-9228-e37d28062f5b (Longer RAY5 5W)" }
+
+[[recipes]]
+id = "longer-ray5-or-b1-20w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 4500
+power_min_pct = 0.0
+power_max_pct = 20.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "d2145092-0b9f-40a7-8c4d-9545168c6ed6 (Longer RAY5 or B1 20W)" }
+
+[[recipes]]
+id = "mecolour-m10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 6000
+power_min_pct = 0.0
+power_max_pct = 20.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "2868d11f-e60a-44fb-a5ef-7350d98f9816 (MECOLOUR M10W)" }
+
+[[recipes]]
+id = "mecolour-m6w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 6.0 }
+speed_mm_min = 6000
+power_min_pct = 0.0
+power_max_pct = 80.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "99306ced-4bf2-4745-8766-cd7f503c8b00 (MECOLOUR M6W)" }
+
+[[recipes]]
+id = "ortur-lu15w-4-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 4.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 40.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "c765a10b-04e4-482f-baea-7e99f5c41d30 (Ortur LU15W (4.5W))" }
+notes = "It need to be adjusted based on different leathers, different colors."
+
+[[recipes]]
+id = "ortur-lu20w-5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 40.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "94d6b6ae-4bed-4923-a1c4-bba1285862fb (Ortur LU20W (5.5W))" }
+notes = "It need to be adjusted based on different leathers, different colors."
+
+[[recipes]]
+id = "ortur-lu7w-1-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 1.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "02374c7b-a1f9-4989-b691-d5fc1d0ee693 (Ortur LU7W (1.5W))" }
+notes = "It need to be adjusted based on different leathers, different colors."
+
+[[recipes]]
+id = "sculpfun-s9-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 1500
+power_min_pct = 0.0
+power_max_pct = 30.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "d5060d33-eb20-4ebc-b5c2-10bb995a9ad3 (SculpFun S9)" }
+notes = "Preferably dark color"
+
+[[recipes]]
+id = "two-trees-ts2-10-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 6000
+power_min_pct = 0.0
+power_max_pct = 20.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "20f24235-6b1f-48fa-9444-d1c936132e67 (Two Trees TS2-10)" }
+
+[[recipes]]
+id = "two-trees-ts2-55-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 6000
+power_min_pct = 0.0
+power_max_pct = 80.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "dcf3e951-426c-43e2-8152-0163780f700f (Two Trees TS2-55)" }
+
+[[recipes]]
+id = "two-trees-ts3-10-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 6000
+power_min_pct = 0.0
+power_max_pct = 20.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "2d86de33-57b9-4a51-81a5-298ef06eb943 (Two Trees TS3-10)" }
+
+[[recipes]]
+id = "two-trees-ts3-55-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 6000
+power_min_pct = 0.0
+power_max_pct = 80.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "52bb2e6f-e5d6-4395-b273-eef8a3bf979f (Two Trees TS3-55)" }
+
+[[recipes]]
+id = "two-trees-tts-55-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 6000
+power_min_pct = 0.0
+power_max_pct = 80.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "7b17100e-d06c-4b3f-9bd1-f254db67cde4 (Two Trees TTS-55)" }

@@ -1,0 +1,81 @@
+id = "lasergrbl-kraft-paper-2mm"
+name = "Kraft paper"
+category = "paper"
+thickness_mm = 2.0
+
+[[recipes]]
+id = "mecolour-m10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 2000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "32c9a0cf-7793-4b4f-aa7a-5e26002d3d30 (MECOLOUR M10W)" }
+
+[[recipes]]
+id = "mecolour-m6w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 6.0 }
+speed_mm_min = 1500
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "244d630b-e67c-4719-91e3-494dfcd10344 (MECOLOUR M6W)" }
+
+[[recipes]]
+id = "two-trees-ts2-10-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 2000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "a5db3889-baba-4eb3-84cd-35395aec9ccf (Two Trees TS2-10)" }
+
+[[recipes]]
+id = "two-trees-ts2-55-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 1500
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "610900e4-15b9-4258-8316-745a26c1b83e (Two Trees TS2-55)" }
+
+[[recipes]]
+id = "two-trees-ts3-10-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 2000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "7eb06438-1d6d-455f-9b57-fb8f41e34683 (Two Trees TS3-10)" }
+
+[[recipes]]
+id = "two-trees-ts3-55-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 1500
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "51938d83-0419-4524-9961-2f727b906a07 (Two Trees TS3-55)" }
+
+[[recipes]]
+id = "two-trees-tts-55-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 1500
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "18d57b1d-4f7d-484f-b219-a55ad1142d4b (Two Trees TTS-55)" }

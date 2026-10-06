@@ -1,0 +1,16 @@
+id = "lasergrbl-non-woven-fabrics-0-5mm"
+name = "Non-woven fabrics"
+category = "textile"
+thickness_mm = 0.5
+
+[[recipes]]
+id = "longer-ray5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 800
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "6246e54e-2b3a-482f-b683-a2532c96bf96 (Longer RAY5 5W)" }
+notes = "white color.It need to be adjusted based on different colors."

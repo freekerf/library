@@ -1,0 +1,15 @@
+id = "lasergrbl-plywood-7mm"
+name = "Plywood"
+category = "engineered_wood"
+thickness_mm = 7.0
+
+[[recipes]]
+id = "comgo-z1-10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 90
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "97cf0865-a2ba-4caa-8bf0-882b3fc581db (Comgo Z1 10W)" }

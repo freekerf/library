@@ -1,0 +1,130 @@
+id = "lasergrbl-paperboard"
+name = "Paperboard"
+category = "paper"
+
+[[recipes]]
+id = "algo-alm-22bd-22w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 30000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "37a38808-ca95-4014-9c3f-f13821f3fdc9 (Algo ALM-22BD (22W))" }
+
+[[recipes]]
+id = "leon3d-l40-5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 1000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 3
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "6fd5668c-1c58-4e10-9f9d-e8983a8aca75 (LEON3D L40 (5.5W))" }
+
+[[recipes]]
+id = "leon3d-l40-5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 20.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "25bd4418-6208-4646-951a-707f8bae0786 (LEON3D L40 (5.5W))" }
+
+[[recipes]]
+id = "leon3d-l60-10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 1000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "745fb6ee-4b51-47c4-bd0e-84d2a7386d7a (LEON3D L60 (10w))" }
+
+[[recipes]]
+id = "leon3d-l60-10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 12.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "695b5475-2bb2-4e8d-8608-9d085bd3bd0c (LEON3D L60 (10w))" }
+
+[[recipes]]
+id = "ortur-lu15w-4-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 4.5 }
+speed_mm_min = 1000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 4
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "ab1a18ec-a9d7-4e80-8976-277c35f56590 (Ortur LU15W (4.5W))" }
+notes = "It need to be adjusted based on different thickness paperboards, different colors."
+
+[[recipes]]
+id = "ortur-lu15w-4-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 4.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 30.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "bdc160a7-8fde-4d8e-8894-8451aea30853 (Ortur LU15W (4.5W))" }
+notes = "It need to be adjusted based on different thickness paperboards, different colors."
+
+[[recipes]]
+id = "ortur-lu20w-5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 1000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 3
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "8ecff531-c5d4-4202-9448-e300429f99e2 (Ortur LU20W (5.5W))" }
+notes = "It need to be adjusted based on different thickness paperboards, different colors."
+
+[[recipes]]
+id = "ortur-lu20w-5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 20.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "c644379f-f7fc-4c43-a413-94f2899b11db (Ortur LU20W (5.5W))" }
+notes = "It need to be adjusted based on different thickness paperboards, different colors."
+
+[[recipes]]
+id = "ortur-lu7w-1-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 1.5 }
+speed_mm_min = 200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "57137551-3ed5-4d9f-9cd5-50fa92007b2a (Ortur LU7W (1.5W))" }
+notes = "It need to be adjusted based on different thickness paperboards, different colors."
+
+[[recipes]]
+id = "ortur-lu7w-1-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 1.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "d22539c7-dd4a-41b6-b004-c5de2f5fdea2 (Ortur LU7W (1.5W))" }
+notes = "It need to be adjusted based on different thickness paperboards, different colors."

@@ -1,0 +1,158 @@
+id = "lasergrbl-glass"
+name = "Glass"
+category = "glass"
+
+[[recipes]]
+id = "atomstack-m50-10w-a10-s10-x7-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 1000
+power_min_pct = 0.0
+power_max_pct = 80.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "ae00b641-8021-4d97-9e29-0529c5e7fdf1 (Atomstack M50 10W (A10/S10/X7))" }
+notes = "Color with dark paint before engrave"
+
+[[recipes]]
+id = "atomstack-x20-pro-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 1000
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "a2b15492-5114-469e-a38a-c7aac187f46e (Atomstack X20 Pro)" }
+
+[[recipes]]
+id = "comgo-z1-10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 1200
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "eb57d92b-ceba-46d3-9298-6e40d80f63aa (Comgo Z1 10W)" }
+notes = "Surface needs to be painted black"
+
+[[recipes]]
+id = "comgo-z1-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 700
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "eb57d92b-ceba-46d3-9298-6e40d80a63aa (Comgo Z1 5W)" }
+notes = "Surface needs to be painted black"
+
+[[recipes]]
+id = "longer-b1-30w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 1500
+power_min_pct = 0.0
+power_max_pct = 30.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "75363a15-2a0c-4b83-b5b0-c9050335f842 (Longer B1 30W)" }
+notes = "Paint blue."
+
+[[recipes]]
+id = "longer-b1-40w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "3ebcd658-fee0-471e-9b3f-aac173c19aac (Longer B1 40W)" }
+notes = "Paint blue"
+
+[[recipes]]
+id = "longer-ray5-10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 1000
+power_min_pct = 0.0
+power_max_pct = 70.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "335e177b-d8ef-43bd-bd41-7a1460ccbe66 (Longer RAY5 10W)" }
+notes = "Paint dark."
+
+[[recipes]]
+id = "longer-ray5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 700
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "f67e518e-a29d-4480-ae1a-2b11442d73af (Longer RAY5 5W)" }
+notes = "color with dark paint before engrave."
+
+[[recipes]]
+id = "longer-ray5-or-b1-20w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 4000
+power_min_pct = 0.0
+power_max_pct = 75.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "a74e0040-6a06-4c3a-9f6f-5ce3cac3fb79 (Longer RAY5 or B1 20W)" }
+notes = "Paint dark."
+
+[[recipes]]
+id = "yorahome-15-6-5w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 6.5 }
+speed_mm_min = 50
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "80d37643-a95e-42a6-9370-6f61a41a2d03 (YoraHome 15 (6.5W optical))" }
+notes = "When engraving glass, paint it with black acrylic."
+
+[[recipes]]
+id = "yorahome-40-7w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 7.0 }
+speed_mm_min = 300
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "147d9026-75dd-4559-b3f7-7655a21e4f18 (YoraHome 40 (7W optical))" }
+notes = "When engraving glass, paint it with black acrylic."
+
+[[recipes]]
+id = "yorahome-5-5-3-5w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 3.5 }
+speed_mm_min = 100
+power_min_pct = 0.0
+power_max_pct = 80.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "3114e0a5-77e4-4ff5-a28f-c75e7d4cbeb2 (YoraHome 5.5 (3.5W optical))" }
+notes = "When engraving glass, paint it with black acrylic."
+
+[[recipes]]
+id = "yorahome-80-10w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 500
+power_min_pct = 0.0
+power_max_pct = 20.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "adbe3ce0-e22d-48d4-9b36-a1a43d8eeca5 (YoraHome 80 (10W optical))" }
+notes = "When engraving glass, paint it with black acrylic."

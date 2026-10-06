@@ -1,0 +1,16 @@
+id = "lasergrbl-abs-6mm"
+name = "ABS"
+category = "plastic"
+thickness_mm = 6.0
+
+[[recipes]]
+id = "algo-alm-22bd-22w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "dc50080b-582c-4c0c-8223-417f47947286 (Algo ALM-22BD (22W))" }
+notes = "There are burn marks along the cutting path and a pungent odor is emitted during the cutting process. Cut with caution"

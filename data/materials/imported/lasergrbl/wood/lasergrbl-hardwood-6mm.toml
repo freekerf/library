@@ -1,0 +1,51 @@
+id = "lasergrbl-hardwood-6mm"
+name = "Hardwood"
+category = "wood"
+thickness_mm = 6.0
+
+[[recipes]]
+id = "atomstack-a5-20w-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 400
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 15
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "a502639d-5ea6-4e22-b7b6-2eeb9d48f53a (Atomstack A5 20W (5W))" }
+
+[[recipes]]
+id = "mecolour-m10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 150
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "60333685-5f69-4cd0-858e-07fd05600ca5 (MECOLOUR M10W)" }
+notes = "The focus before cutting needs to be in the middle of the object to be cut, and the focus is different for different thicknesses."
+
+[[recipes]]
+id = "two-trees-ts2-10-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 150
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "1ecf9510-b42c-49b0-abee-a47c723382e4 (Two Trees TS2-10)" }
+notes = "The focus before cutting needs to be in the middle of the object to be cut, and the focus is different for different thicknesses."
+
+[[recipes]]
+id = "two-trees-ts3-10-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 150
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "df663262-dde0-4839-81bc-99df50caa881 (Two Trees TS3-10)" }
+notes = "The focus before cutting needs to be in the middle of the object to be cut, and the focus is different for different thicknesses."

@@ -1,0 +1,373 @@
+{
+  "$defs": {
+    "FileEntry": {
+      "description": "A file inside the archive.",
+      "properties": {
+        "path": {
+          "description": "Path relative to the archive's top directory.",
+          "type": "string"
+        },
+        "sha256": {
+          "description": "Lowercase hex SHA-256 of the file.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "HazardRef": {
+      "description": "Reference to a hazard list entry.",
+      "properties": {
+        "id": {
+          "description": "Hazard id.",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity",
+          "description": "Severity."
+        }
+      },
+      "required": [
+        "id",
+        "severity"
+      ],
+      "type": "object"
+    },
+    "LaserKind": {
+      "description": "Laser source technology.",
+      "oneOf": [
+        {
+          "const": "diode",
+          "description": "Semiconductor (blue/IR) diode module.",
+          "type": "string"
+        },
+        {
+          "const": "co2",
+          "description": "CO₂ glass or RF tube.",
+          "type": "string"
+        },
+        {
+          "const": "fiber",
+          "description": "Fiber laser (usually galvo).",
+          "type": "string"
+        }
+      ]
+    },
+    "LaserSource": {
+      "additionalProperties": false,
+      "description": "A laser source described by technology and real optical output power.",
+      "properties": {
+        "kind": {
+          "$ref": "#/$defs/LaserKind",
+          "description": "Laser technology."
+        },
+        "power_w": {
+          "description": "Real optical output power, in watts (not the electrical/marketing figure).",
+          "format": "double",
+          "maximum": 500.0,
+          "minimum": 0.1,
+          "type": "number",
+          "x-unit": "W"
+        }
+      },
+      "required": [
+        "kind",
+        "power_w"
+      ],
+      "type": "object"
+    },
+    "MachineEntry": {
+      "description": "Summary of a machine profile.",
+      "properties": {
+        "file": {
+          "$ref": "#/$defs/FileEntry",
+          "description": "The machine file (JSON)."
+        },
+        "id": {
+          "description": "Machine id.",
+          "type": "string"
+        },
+        "laser": {
+          "$ref": "#/$defs/LaserSource",
+          "description": "Laser module."
+        },
+        "manufacturer": {
+          "description": "Manufacturer.",
+          "type": "string"
+        },
+        "model": {
+          "description": "Model.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "manufacturer",
+        "model",
+        "laser",
+        "file"
+      ],
+      "type": "object"
+    },
+    "MaterialCategory": {
+      "description": "Material family, used for grouping and safety screening.",
+      "oneOf": [
+        {
+          "const": "wood",
+          "description": "Solid wood (basswood, pine, bamboo…).",
+          "type": "string"
+        },
+        {
+          "const": "engineered_wood",
+          "description": "Plywood, MDF, HDF.",
+          "type": "string"
+        },
+        {
+          "const": "acrylic",
+          "description": "Cast or extruded PMMA.",
+          "type": "string"
+        },
+        {
+          "const": "leather",
+          "description": "Leather and leather-like materials.",
+          "type": "string"
+        },
+        {
+          "const": "paper",
+          "description": "Paper, card and cardboard.",
+          "type": "string"
+        },
+        {
+          "const": "textile",
+          "description": "Cloth, felt, denim.",
+          "type": "string"
+        },
+        {
+          "const": "anodized_metal",
+          "description": "Anodized aluminium.",
+          "type": "string"
+        },
+        {
+          "const": "coated_metal",
+          "description": "Painted, powder coated or plated metal.",
+          "type": "string"
+        },
+        {
+          "const": "metal",
+          "description": "Bare metal.",
+          "type": "string"
+        },
+        {
+          "const": "stone",
+          "description": "Natural or artificial stone, slate.",
+          "type": "string"
+        },
+        {
+          "const": "glass",
+          "description": "Glass and mirrors.",
+          "type": "string"
+        },
+        {
+          "const": "ceramic",
+          "description": "Ceramics, tiles, clay.",
+          "type": "string"
+        },
+        {
+          "const": "plastic",
+          "description": "Other plastics.",
+          "type": "string"
+        },
+        {
+          "const": "foam",
+          "description": "Foams (EVA, foam board…).",
+          "type": "string"
+        },
+        {
+          "const": "rubber",
+          "description": "Rubber and silicone.",
+          "type": "string"
+        },
+        {
+          "const": "cork",
+          "description": "Cork.",
+          "type": "string"
+        },
+        {
+          "const": "other",
+          "description": "Anything else.",
+          "type": "string"
+        }
+      ]
+    },
+    "MaterialEntry": {
+      "description": "Summary of a material, enough to list/filter without opening the file.",
+      "properties": {
+        "category": {
+          "$ref": "#/$defs/MaterialCategory",
+          "description": "Category."
+        },
+        "confidence": {
+          "description": "Confidence levels present among its recipes.",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "file": {
+          "$ref": "#/$defs/FileEntry",
+          "description": "The material file (JSON)."
+        },
+        "hazards": {
+          "description": "Hazards matching the material (the app must alert or block).",
+          "items": {
+            "$ref": "#/$defs/HazardRef"
+          },
+          "type": "array"
+        },
+        "id": {
+          "description": "Material id.",
+          "type": "string"
+        },
+        "lasers": {
+          "description": "Laser technologies covered by its recipes.",
+          "items": {
+            "$ref": "#/$defs/LaserKind"
+          },
+          "type": "array"
+        },
+        "name": {
+          "description": "Display name.",
+          "type": "string"
+        },
+        "operations": {
+          "description": "Operations covered by its recipes.",
+          "items": {
+            "$ref": "#/$defs/Operation"
+          },
+          "type": "array"
+        },
+        "thickness_mm": {
+          "description": "Thickness in millimetres, if any.",
+          "format": "double",
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "category",
+        "operations",
+        "lasers",
+        "confidence",
+        "file"
+      ],
+      "type": "object"
+    },
+    "Operation": {
+      "description": "Process operation performed by a recipe.",
+      "oneOf": [
+        {
+          "const": "cut",
+          "description": "Through cut.",
+          "type": "string"
+        },
+        {
+          "const": "engrave_vector",
+          "description": "Vector (line) engraving / scoring.",
+          "type": "string"
+        },
+        {
+          "const": "engrave_raster",
+          "description": "Raster (image/fill) engraving.",
+          "type": "string"
+        }
+      ]
+    },
+    "Severity": {
+      "description": "Hazard severity.",
+      "oneOf": [
+        {
+          "const": "warn",
+          "description": "Show a warning; processing is allowed with care.",
+          "type": "string"
+        },
+        {
+          "const": "block",
+          "description": "Block: never process. The library rejects materials matching it.",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "$id": "https://raw.githubusercontent.com/freekerf/library/main/schema/v1/index.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Table of contents of a release package.",
+  "properties": {
+    "extra": {
+      "description": "Other files shipped (schemas, license texts).",
+      "items": {
+        "$ref": "#/$defs/FileEntry"
+      },
+      "type": "array"
+    },
+    "format": {
+      "description": "Always `freekerf-library`.",
+      "type": "string"
+    },
+    "format_version": {
+      "description": "Index format version.",
+      "format": "uint32",
+      "minimum": 0,
+      "type": "integer"
+    },
+    "hazards": {
+      "$ref": "#/$defs/FileEntry",
+      "description": "The hazard list file."
+    },
+    "license": {
+      "description": "SPDX license of the package.",
+      "type": "string"
+    },
+    "machines": {
+      "description": "One entry per machine profile, sorted by id.",
+      "items": {
+        "$ref": "#/$defs/MachineEntry"
+      },
+      "type": "array"
+    },
+    "materials": {
+      "description": "One entry per material, sorted by id.",
+      "items": {
+        "$ref": "#/$defs/MaterialEntry"
+      },
+      "type": "array"
+    },
+    "schema": {
+      "description": "Data schema version of the documents (`v1`).",
+      "type": "string"
+    },
+    "version": {
+      "description": "Library release version (semver).",
+      "type": "string"
+    }
+  },
+  "required": [
+    "format",
+    "format_version",
+    "version",
+    "schema",
+    "license",
+    "materials",
+    "machines",
+    "hazards",
+    "extra"
+  ],
+  "title": "FreeKerf library package index (v1)",
+  "type": "object"
+}

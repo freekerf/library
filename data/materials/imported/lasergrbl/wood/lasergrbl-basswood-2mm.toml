@@ -1,0 +1,59 @@
+id = "lasergrbl-basswood-2mm"
+name = "Basswood"
+category = "wood"
+thickness_mm = 2.0
+
+[[recipes]]
+id = "longer-b1-30w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 1000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "29e1132f-af77-400b-b9ea-d5db80f43060 (Longer B1 30W)" }
+
+[[recipes]]
+id = "longer-b1-40w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 1800
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "a1decf21-7032-48f5-82ed-a8b3482bffac (Longer B1 40W)" }
+
+[[recipes]]
+id = "longer-ray5-10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 500
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "4843228e-7f3e-4da4-bd9f-06c411f52f0e (Longer RAY5 10W)" }
+
+[[recipes]]
+id = "longer-ray5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 300
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "9cb8de2f-f214-4601-8e94-b1a7543e2a42 (Longer RAY5 5W)" }
+
+[[recipes]]
+id = "longer-ray5-or-b1-20w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 800
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "57f2ca3e-f666-4450-9a3f-7337654ab01a (Longer RAY5 or B1 20W)" }

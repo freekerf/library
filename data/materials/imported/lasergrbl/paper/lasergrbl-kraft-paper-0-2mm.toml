@@ -1,0 +1,37 @@
+id = "lasergrbl-kraft-paper-0-2mm"
+name = "Kraft Paper"
+category = "paper"
+thickness_mm = 0.2
+
+[[recipes]]
+id = "atomstack-m50-10w-a10-s10-x7-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 5000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "5e03f4db-c5f2-4199-ad6e-a5f419cbb599 (Atomstack M50 10W (A10/S10/X7))" }
+
+[[recipes]]
+id = "atomstack-x20-pro-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 3000
+power_min_pct = 80.0
+power_max_pct = 80.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "5b5d3fde-4a74-4446-b686-ef4c16d37085 (Atomstack X20 Pro)" }
+
+[[recipes]]
+id = "sculpfun-s9-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 1500
+power_min_pct = 50.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "09ceb759-ecc2-4f10-912a-b1f6989a3102 (SculpFun S9)" }

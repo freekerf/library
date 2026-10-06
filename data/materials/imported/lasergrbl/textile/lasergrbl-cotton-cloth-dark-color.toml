@@ -1,0 +1,145 @@
+id = "lasergrbl-cotton-cloth-dark-color"
+name = "Cotton Cloth (dark color)"
+category = "textile"
+
+[[recipes]]
+id = "leon3d-l40-5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 1200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "791ebe79-d303-4fa5-8b0b-c34c66546e6e (LEON3D L40 (5.5W))" }
+
+[[recipes]]
+id = "leon3d-l60-10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 1200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "2953e0ac-d6f3-4701-91c9-6767e2023a9f (LEON3D L60 (10w))" }
+
+[[recipes]]
+id = "mecolour-m10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "ddcd7f53-2c93-4439-962d-31afc3b69790 (MECOLOUR M10W)" }
+notes = "Easy to catch fire, pay attention to protection!"
+
+[[recipes]]
+id = "mecolour-m6w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 6.0 }
+speed_mm_min = 200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "caa810c8-2afc-4ba0-8d98-8d7026ff4127 (MECOLOUR M6W)" }
+notes = "Easy to catch fire, pay attention to protection!"
+
+[[recipes]]
+id = "ortur-lu15w-4-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 4.5 }
+speed_mm_min = 1000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "b22ede75-6b22-4b66-ba39-d4b24f8d07bf (Ortur LU15W (4.5W))" }
+notes = "Some cotton blended fabrics may be melt. It need to be adjusted based on different colors. There will be black edges after cutting."
+
+[[recipes]]
+id = "ortur-lu20w-5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 1200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "ef98a292-1b2b-4be9-88c1-26de37c32fc2 (Ortur LU20W (5.5W))" }
+notes = "Some cotton blended fabrics may be melt. It need to be adjusted based on different colors. There will be black edges after cutting"
+
+[[recipes]]
+id = "ortur-lu7w-1-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 1.5 }
+speed_mm_min = 500
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "86f0732e-f7ad-4521-bd29-4ecaff41c8cc (Ortur LU7W (1.5W))" }
+notes = "Some cotton blended fabrics may be melt. It need to be adjusted based on different colors. There will be black edges after cutting"
+
+[[recipes]]
+id = "two-trees-ts2-10-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "4acd934c-cfae-4ddd-b080-74ffd965384b (Two Trees TS2-10)" }
+notes = "Easy to catch fire, pay attention to protection!"
+
+[[recipes]]
+id = "two-trees-ts2-55-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "cbb56d8d-d405-4d40-9cd2-32d32d75ee38 (Two Trees TS2-55)" }
+notes = "Easy to catch fire, pay attention to protection!"
+
+[[recipes]]
+id = "two-trees-ts3-10-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "50617410-13cd-40aa-8d1d-90af94496ccf (Two Trees TS3-10)" }
+notes = "Easy to catch fire, pay attention to protection!"
+
+[[recipes]]
+id = "two-trees-ts3-55-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "cc7b582e-a9bf-4013-af8d-fe89cfda4ce0 (Two Trees TS3-55)" }
+notes = "Easy to catch fire, pay attention to protection!"
+
+[[recipes]]
+id = "two-trees-tts-55-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "4318371a-381c-4836-827a-9eedd7ae4110 (Two Trees TTS-55)" }
+notes = "Easy to catch fire, pay attention to protection!"

@@ -1,0 +1,15 @@
+id = "lasergrbl-eucalyptus-plywood-10mm"
+name = "Eucalyptus Plywood"
+category = "engineered_wood"
+thickness_mm = 10.0
+
+[[recipes]]
+id = "algo-alm-22bd-22w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "8188e3a5-de78-4773-9759-a3a33504a0f6 (Algo ALM-22BD (22W))" }

@@ -1,0 +1,47 @@
+id = "lasergrbl-anodized-aluminum"
+name = "Anodized Aluminum"
+category = "anodized_metal"
+
+[[recipes]]
+id = "longer-ray5-or-b1-20w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 500
+power_min_pct = 0.0
+power_max_pct = 60.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "14a4c4ca-e0cc-4e20-b67d-9b20214be6af (Longer RAY5 or B1 20W)" }
+
+[[recipes]]
+id = "yorahome-15-6-5w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 6.5 }
+speed_mm_min = 100
+power_min_pct = 0.0
+power_max_pct = 40.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "bbb97159-2736-4cb7-a6e0-9fe9d9d0ffd1 (YoraHome 15 (6.5W optical))" }
+
+[[recipes]]
+id = "yorahome-40-7w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 7.0 }
+speed_mm_min = 300
+power_min_pct = 0.0
+power_max_pct = 10.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "821dc2cf-17ce-433e-b12e-144abc9cfb9a (YoraHome 40 (7W optical))" }
+
+[[recipes]]
+id = "yorahome-80-10w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 400
+power_min_pct = 0.0
+power_max_pct = 15.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "b92ca71d-0396-415e-a438-5be89a984ddf (YoraHome 80 (10W optical))" }

@@ -1,0 +1,61 @@
+id = "lasergrbl-ceramic"
+name = "Ceramic"
+category = "ceramic"
+
+[[recipes]]
+id = "comgo-z1-10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 1200
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "8d6dd2d1-8320-439f-ba1b-fee7f8493416 (Comgo Z1 10W)" }
+notes = "Surface needs to be painted black"
+
+[[recipes]]
+id = "comgo-z1-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 700
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "8d6dd2d1-8310-439f-ba1b-fee7f8493416 (Comgo Z1 5W)" }
+notes = "Surface needs to be painted black"
+
+[[recipes]]
+id = "longer-b1-30w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 1000
+power_min_pct = 0.0
+power_max_pct = 80.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "8728b339-5279-40dc-b933-60992c9adaaf (Longer B1 30W)" }
+
+[[recipes]]
+id = "longer-b1-40w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 4000
+power_min_pct = 0.0
+power_max_pct = 80.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "f52d6f58-5fc7-4df2-8c8b-90e143e59629 (Longer B1 40W)" }
+
+[[recipes]]
+id = "longer-ray5-10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 400
+power_min_pct = 0.0
+power_max_pct = 70.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "946b8e80-020c-4960-92de-6fb1cf53e5f7 (Longer RAY5 10W)" }
+notes = "Paint dark."

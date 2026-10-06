@@ -1,0 +1,85 @@
+id = "lasergrbl-plywood-3mm"
+name = "Plywood"
+category = "engineered_wood"
+thickness_mm = 3.0
+
+[[recipes]]
+id = "comgo-z1-10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 250
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "5e267606-bc51-4ae4-b948-3e2d8796e0ad (Comgo Z1 10W)" }
+
+[[recipes]]
+id = "comgo-z1-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 120
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "5e261606-bc51-4ae4-b948-3e2d8796e0ad (Comgo Z1 5W)" }
+
+[[recipes]]
+id = "leon3d-l40-5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 240
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 3
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "75b44675-e0de-4f10-826c-d909e3a46310 (LEON3D L40 (5.5W))" }
+notes = "Importante: reducir la velocidad puede provocar llama"
+
+[[recipes]]
+id = "leon3d-l60-10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 240
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "ac1616d5-a954-422b-8217-0c59c18cf67e (LEON3D L60 (10w))" }
+notes = "Importante: reducir la velocidad puede provocar llama"
+
+[[recipes]]
+id = "ortur-lu15w-4-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 4.5 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 3
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "6b0151a7-ac03-4d5f-bcb3-4af3db7d5534 (Ortur LU15W (4.5W))" }
+notes = "It need to be adjusted based on different woods, different colors."
+
+[[recipes]]
+id = "ortur-lu20w-5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "180109df-7de5-42b8-b762-a3a99da8c4d9 (Ortur LU20W (5.5W))" }
+notes = "It need to be adjusted based on different woods, different colors."
+
+[[recipes]]
+id = "yorahome-80-10w-optical-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 200
+power_min_pct = 65.0
+power_max_pct = 65.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "1302379e-f424-431e-8888-c2e6a4c232f0 (YoraHome 80 (10W optical))" }

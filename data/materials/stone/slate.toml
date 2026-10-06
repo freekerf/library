@@ -1,0 +1,28 @@
+id = "slate"
+name = "Natural slate (coasters, tiles)"
+category = "stone"
+notes = "Engraving produces a light grey mark on dark slate; invert photos before dithering."
+
+[[recipes]]
+id = "diode-10w-engrave-raster"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10 }
+speed_mm_min = 3000
+power_min_pct = 0
+power_max_pct = 60
+passes = 1
+dpi = 254
+dithering = "jarvis"
+confidence = { level = "estimated", method = "Starting values from common practice, compiled by the maintainers; run a test grid before relying on them." }
+
+[[recipes]]
+id = "co2-50w-engrave-raster"
+operation = "engrave_raster"
+laser = { kind = "co2", power_w = 50 }
+speed_mm_min = 15000
+power_min_pct = 25
+power_max_pct = 35
+passes = 1
+line_interval_mm = 0.1
+dithering = "jarvis"
+confidence = { level = "estimated", method = "Starting values from common practice, compiled by the maintainers; run a test grid before relying on them." }

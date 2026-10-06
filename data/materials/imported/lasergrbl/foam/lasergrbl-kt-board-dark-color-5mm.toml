@@ -1,0 +1,62 @@
+id = "lasergrbl-kt-board-dark-color-5mm"
+name = "KT Board (dark color)"
+category = "foam"
+thickness_mm = 5.0
+
+[[recipes]]
+id = "leon3d-l40-5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 2000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "898baaa0-3eb6-4dbb-873f-a3348208f222 (LEON3D L40 (5.5W))" }
+
+[[recipes]]
+id = "leon3d-l60-10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 2000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "3e69fc83-d851-4817-8f8b-6c348fbe4752 (LEON3D L60 (10w))" }
+
+[[recipes]]
+id = "ortur-lu15w-4-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 4.5 }
+speed_mm_min = 2000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "b2ef2f8f-5254-45b1-9a5b-21632b2158d0 (Ortur LU15W (4.5W))" }
+notes = "Pay attention to toxic gases! It need to be adjusted based on different colors. There will be black edges after cutting."
+
+[[recipes]]
+id = "ortur-lu20w-5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 2000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "f7368a6e-3155-4c56-8294-3aa9e640ca20 (Ortur LU20W (5.5W))" }
+notes = "Pay attention to toxic gases! It need to be adjusted based on different colors. There will be black edges after cutting."
+
+[[recipes]]
+id = "ortur-lu7w-1-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 1.5 }
+speed_mm_min = 600
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "05d3ec8c-9b5f-465c-9c9b-abfc5c363612 (Ortur LU7W (1.5W))" }
+notes = "Pay attention to toxic gases! It need to be adjusted based on different colors. There will be black edges after cutting."

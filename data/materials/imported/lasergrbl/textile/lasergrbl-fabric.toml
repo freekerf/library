@@ -1,0 +1,47 @@
+id = "lasergrbl-fabric"
+name = "Fabric"
+category = "textile"
+
+[[recipes]]
+id = "comgo-z1-10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 2500
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "afc54f83-e0fd-4913-9108-5a83256ff382 (Comgo Z1 10W)" }
+
+[[recipes]]
+id = "comgo-z1-10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 5000
+power_min_pct = 0.0
+power_max_pct = 40.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "dca85cf9-0984-493f-af26-deee8ad316f5 (Comgo Z1 10W)" }
+
+[[recipes]]
+id = "comgo-z1-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 1500
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "afc51f83-e0fd-4913-9108-5a83256ff382 (Comgo Z1 5W)" }
+
+[[recipes]]
+id = "comgo-z1-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 2500
+power_min_pct = 0.0
+power_max_pct = 40.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "dca15cf9-0984-493f-af26-deee8ad316f5 (Comgo Z1 5W)" }

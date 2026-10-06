@@ -1,0 +1,69 @@
+id = "lasergrbl-mdf"
+name = "MDF"
+category = "engineered_wood"
+
+[[recipes]]
+id = "algo-alm-22bd-22w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 15000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "083a2c4c-b27e-4eea-a1da-d2e98ae59613 (Algo ALM-22BD (22W))" }
+
+[[recipes]]
+id = "atomstack-x20-pro-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 18.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "c5b79972-2ee9-46af-9d7f-a255263d83ca (Atomstack X20 Pro)" }
+
+[[recipes]]
+id = "leon3d-l40-5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 35.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "fa65cc6e-2166-4d7c-bf29-a8879493d727 (LEON3D L40 (5.5W))" }
+
+[[recipes]]
+id = "leon3d-l60-10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 20.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "131551cb-4761-4b01-97f9-4fa7ff517273 (LEON3D L60 (10w))" }
+
+[[recipes]]
+id = "longer-b1-30w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 4000
+power_min_pct = 0.0
+power_max_pct = 17.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "3935f2e2-120e-4d80-b461-1827aa1a1ba4 (Longer B1 30W)" }
+
+[[recipes]]
+id = "longer-b1-40w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 10000
+power_min_pct = 0.0
+power_max_pct = 35.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "d7d5ac98-5533-4784-8ed6-de60e3e480a0 (Longer B1 40W)" }

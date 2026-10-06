@@ -1,0 +1,29 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*.*.*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+      - name: Validate
+        run: |
+          cargo run --quiet -- schema --check
+          cargo run --quiet -- validate
+      - name: Build package
+        run: |
+          export SOURCE_DATE_EPOCH="$(git log -1 --format=%ct)"
+          cargo run --quiet -- package --version "${GITHUB_REF_NAME#v}" --out dist
+          (cd dist && sha256sum * > SHA256SUMS)
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true

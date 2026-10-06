@@ -1,0 +1,36 @@
+id = "lasergrbl-high-density-foam"
+name = "High Density Foam"
+category = "foam"
+
+[[recipes]]
+id = "longer-b1-30w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 1000
+power_min_pct = 0.0
+power_max_pct = 4.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "cbfdcf45-9b09-4ab5-acc8-76910b3ec2d5 (Longer B1 30W)" }
+
+[[recipes]]
+id = "longer-b1-40w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 10000
+power_min_pct = 0.0
+power_max_pct = 15.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "ba2be6a5-f387-4763-a7d4-d7a26ea44be5 (Longer B1 40W)" }
+
+[[recipes]]
+id = "longer-ray5-or-b1-20w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 15.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "5336e93a-faf9-4761-b479-43a3d54306bb (Longer RAY5 or B1 20W)" }

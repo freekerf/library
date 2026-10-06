@@ -1,0 +1,127 @@
+id = "lasergrbl-plywood"
+name = "Plywood"
+category = "engineered_wood"
+
+[[recipes]]
+id = "leon3d-l40-5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "a2486915-2d1e-4ae2-b3ab-aaba771cf517 (LEON3D L40 (5.5W))" }
+
+[[recipes]]
+id = "leon3d-l60-10w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 20.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "c337d23b-739b-4863-8557-ff46c76fe656 (LEON3D L60 (10w))" }
+
+[[recipes]]
+id = "longer-ray5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 2000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "e57b38af-7218-4f0b-aa90-bd96f820a56b (Longer RAY5 5W)" }
+
+[[recipes]]
+id = "ortur-lu15w-4-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 4.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "a46e8208-5ef2-4cef-b79b-dcc09720a289 (Ortur LU15W (4.5W))" }
+notes = "It need to be adjusted based on different woods, different colors."
+
+[[recipes]]
+id = "ortur-lu20w-5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 3000
+power_min_pct = 0.0
+power_max_pct = 80.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "c739e3ee-c38b-47a7-b1ff-79d02928231e (Ortur LU20W (5.5W))" }
+notes = "It need to be adjusted based on different woods, different colors."
+
+[[recipes]]
+id = "ortur-lu7w-1-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 1.5 }
+speed_mm_min = 2000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "3d3e2cff-f117-4df7-a7c3-09e4fd62ce44 (Ortur LU7W (1.5W))" }
+notes = "It need to be adjusted based on different woods, different colors."
+
+[[recipes]]
+id = "yorahome-15-6-5w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 6.5 }
+speed_mm_min = 300
+power_min_pct = 0.0
+power_max_pct = 30.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "b0534fb3-9b35-4cb3-b824-7a480d20ec3a (YoraHome 15 (6.5W optical))" }
+
+[[recipes]]
+id = "yorahome-3-5-2-2w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 2.2 }
+speed_mm_min = 200
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "cec487c5-54cb-4654-9139-2255593ee032 (YoraHome 3.5 (2.2W optical))" }
+
+[[recipes]]
+id = "yorahome-40-7w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 7.0 }
+speed_mm_min = 300
+power_min_pct = 0.0
+power_max_pct = 8.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "8bb01e5b-66fd-4e9f-805a-77c0502ba18e (YoraHome 40 (7W optical))" }
+
+[[recipes]]
+id = "yorahome-5-5-3-5w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 3.5 }
+speed_mm_min = 200
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "40b6b2e7-9546-417e-958f-354046e0c4f1 (YoraHome 5.5 (3.5W optical))" }
+
+[[recipes]]
+id = "yorahome-80-10w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 1250
+power_min_pct = 0.0
+power_max_pct = 15.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "3869fbcc-9cac-44fe-b58a-cd68bfaf0a66 (YoraHome 80 (10W optical))" }

@@ -1,0 +1,16 @@
+id = "lasergrbl-denim-0-8mm"
+name = "Denim"
+category = "textile"
+thickness_mm = 0.8
+
+[[recipes]]
+id = "algo-alm-22bd-22w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 1800
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "9377c0af-037a-4426-8b7c-cd8203ba9442 (Algo ALM-22BD (22W))" }
+notes = "Cut edges neatly, but slight burn marks can be seen"

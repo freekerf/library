@@ -1,0 +1,15 @@
+id = "lasergrbl-cotton-cloth"
+name = "Cotton Cloth"
+category = "textile"
+
+[[recipes]]
+id = "longer-ray5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 1000
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "da7ce8f7-7c65-4c21-b5d2-72bc4ee83d70 (Longer RAY5 5W)" }
+notes = "white color. It need to be adjusted based on different colors."

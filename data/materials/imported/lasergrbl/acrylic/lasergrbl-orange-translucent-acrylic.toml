@@ -1,0 +1,14 @@
+id = "lasergrbl-orange-translucent-acrylic"
+name = "Orange Translucent Acrylic"
+category = "acrylic"
+
+[[recipes]]
+id = "longer-b1-30w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 2500
+power_min_pct = 0.0
+power_max_pct = 25.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "eb6d7314-9991-4568-8839-7395ee22a0b5 (Longer B1 30W)" }

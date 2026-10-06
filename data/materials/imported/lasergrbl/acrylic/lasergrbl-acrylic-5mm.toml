@@ -1,0 +1,27 @@
+id = "lasergrbl-acrylic-5mm"
+name = "Acrylic"
+category = "acrylic"
+thickness_mm = 5.0
+
+[[recipes]]
+id = "algo-alm-22bd-22w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "03d168d5-5f54-4e21-bbcd-736b4ea9a43d (Algo ALM-22BD (22W))" }
+notes = "There is an irritating odor when cutting, so cut with caution"
+
+[[recipes]]
+id = "atomstack-x20-pro-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "280f7d87-5424-4e3b-b8ff-7f907d1a75d1 (Atomstack X20 Pro)" }

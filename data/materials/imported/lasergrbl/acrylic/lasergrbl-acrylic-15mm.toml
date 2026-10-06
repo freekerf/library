@@ -1,0 +1,61 @@
+id = "lasergrbl-acrylic-15mm"
+name = "Acrylic"
+category = "acrylic"
+thickness_mm = 15.0
+
+[[recipes]]
+id = "algo-alm-22bd-22w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 4
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "6ce61e22-1bfa-417f-9d18-13ab15dd484e (Algo ALM-22BD (22W))" }
+notes = "There is an irritating odor when cutting, so cut with caution"
+
+[[recipes]]
+id = "atomstack-x20-pro-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 100
+power_min_pct = 60.0
+power_max_pct = 60.0
+passes = 8
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "3c76c1de-f651-4a8e-98af-708fc3bda736 (Atomstack X20 Pro)" }
+
+[[recipes]]
+id = "longer-b1-30w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 3
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "228a45db-4585-43c5-94ad-ec4457a3be4e (Longer B1 30W)" }
+
+[[recipes]]
+id = "longer-b1-40w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "26995cf9-4134-41ab-a260-3a47afba44e0 (Longer B1 40W)" }
+notes = "Defocus 10mm"
+
+[[recipes]]
+id = "longer-ray5-or-b1-20w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 100
+power_min_pct = 70.0
+power_max_pct = 70.0
+passes = 5
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "c2fd15c6-fc05-439a-9198-c9d84f0d733a (Longer RAY5 or B1 20W)" }

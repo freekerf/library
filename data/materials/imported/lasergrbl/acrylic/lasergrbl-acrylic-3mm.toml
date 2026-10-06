@@ -1,0 +1,121 @@
+id = "lasergrbl-acrylic-3mm"
+name = "Acrylic"
+category = "acrylic"
+thickness_mm = 3.0
+
+[[recipes]]
+id = "longer-b1-40w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 500
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "9171d6c8-2b61-4e3f-9cb5-5804446da90d (Longer B1 40W)" }
+
+[[recipes]]
+id = "longer-ray5-10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 180
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "cc9218d2-2d89-476e-938e-c8a26a83e6da (Longer RAY5 10W)" }
+
+[[recipes]]
+id = "longer-ray5-or-b1-20w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 300
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "ca8df174-2c28-4249-887d-af16927f123c (Longer RAY5 or B1 20W)" }
+
+[[recipes]]
+id = "mecolour-m10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 150
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "796351a2-1cca-40b9-904f-0cd00d73cc5e (MECOLOUR M10W)" }
+notes = "Pay attention to toxic gases!Choose pure black opaque."
+
+[[recipes]]
+id = "mecolour-m6w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 6.0 }
+speed_mm_min = 150
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "5ebc2c03-ea1b-4413-b191-bbcd44e4e76c (MECOLOUR M6W)" }
+notes = "Pay attention to toxic gases!Choose pure black opaque."
+
+[[recipes]]
+id = "two-trees-ts2-10-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 150
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "d317f159-7612-4171-b7e3-13ced6da6d1a (Two Trees TS2-10)" }
+notes = "Pay attention to toxic gases!Choose pure black opaque"
+
+[[recipes]]
+id = "two-trees-ts2-55-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 150
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "714a7858-8055-4247-991b-8f8f92906d4d (Two Trees TS2-55)" }
+notes = "Pay attention to toxic gases!Choose pure black opaque"
+
+[[recipes]]
+id = "two-trees-ts3-10-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 150
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "1babd78a-6422-45c4-ba55-e7fec50109c9 (Two Trees TS3-10)" }
+notes = "Pay attention to toxic gases!Choose pure black opaque."
+
+[[recipes]]
+id = "two-trees-ts3-55-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 150
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "e57bfe54-99d2-4c8d-9421-953fa46d8d74 (Two Trees TS3-55)" }
+notes = "Pay attention to toxic gases!Choose pure black opaque."
+
+[[recipes]]
+id = "two-trees-tts-55-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 150
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "e3c94dc1-1972-4ced-8f07-cde3ebadda29 (Two Trees TTS-55)" }
+notes = "Pay attention to toxic gases!Choose pure black opaque."

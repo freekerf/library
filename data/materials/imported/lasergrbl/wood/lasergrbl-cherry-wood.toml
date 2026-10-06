@@ -1,0 +1,58 @@
+id = "lasergrbl-cherry-wood"
+name = "Cherry Wood"
+category = "wood"
+
+[[recipes]]
+id = "yorahome-15-6-5w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 6.5 }
+speed_mm_min = 300
+power_min_pct = 0.0
+power_max_pct = 20.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "cb1928a2-b2c7-4f36-a639-150e1dc9a093 (YoraHome 15 (6.5W optical))" }
+
+[[recipes]]
+id = "yorahome-3-5-2-2w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 2.2 }
+speed_mm_min = 300
+power_min_pct = 0.0
+power_max_pct = 40.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "846d4b6b-1c14-4331-8479-6fffbc46a016 (YoraHome 3.5 (2.2W optical))" }
+
+[[recipes]]
+id = "yorahome-40-7w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 7.0 }
+speed_mm_min = 400
+power_min_pct = 0.0
+power_max_pct = 8.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "03215c2c-479e-4146-ad76-b743a5301497 (YoraHome 40 (7W optical))" }
+
+[[recipes]]
+id = "yorahome-5-5-3-5w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 3.5 }
+speed_mm_min = 300
+power_min_pct = 0.0
+power_max_pct = 40.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "d9008c2f-7ff8-4a14-a336-ff281aede732 (YoraHome 5.5 (3.5W optical))" }
+
+[[recipes]]
+id = "yorahome-80-10w-optical-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 2000
+power_min_pct = 0.0
+power_max_pct = 10.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "a04c9244-5038-4176-b37e-b1ea521db368 (YoraHome 80 (10W optical))" }

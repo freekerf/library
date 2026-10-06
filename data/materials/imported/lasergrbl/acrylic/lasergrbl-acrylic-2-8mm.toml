@@ -1,0 +1,26 @@
+id = "lasergrbl-acrylic-2-8mm"
+name = "Acrylic"
+category = "acrylic"
+thickness_mm = 2.8
+
+[[recipes]]
+id = "atomstack-a5-20w-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 400
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 12
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "5309a65a-1e45-4a3f-9858-52cc7d298953 (Atomstack A5 20W (5W))" }
+
+[[recipes]]
+id = "atomstack-m50-10w-a10-s10-x7-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 180
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "bf6e362d-c1de-413e-9126-795dcbaadc87 (Atomstack M50 10W (A10/S10/X7))" }

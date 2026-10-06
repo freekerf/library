@@ -1,0 +1,32 @@
+[package]
+name = "freekerf-library"
+description = "Data model, validation, packaging and importers for the FreeKerf materials library"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+jsonschema = { version = "0.58.6", default-features = false }
+roxmltree = "0.21.1"
+schemars = "1.2.2"
+semver = "1.0.28"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+sha2 = "0.11.0"
+tar = "0.4.46"
+thiserror = "2.0.21"
+toml = "1.1.6"
+toml_edit = "0.25.15"
+walkdir = "2.5.0"
+zstd = "0.14.0"
+
+[dev-dependencies]
+semver = "1.0.28"
+tempfile = "3.27.0"
+toml = "1.1.6"
+
+[lints]
+workspace = true

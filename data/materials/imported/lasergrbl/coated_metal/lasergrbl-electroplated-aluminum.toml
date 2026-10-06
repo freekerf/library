@@ -1,0 +1,27 @@
+id = "lasergrbl-electroplated-aluminum"
+name = "Electroplated aluminum"
+category = "coated_metal"
+
+[[recipes]]
+id = "longer-b1-30w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 2000
+power_min_pct = 0.0
+power_max_pct = 50.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "74d5fdaa-af49-4f4e-a51d-f42a70916331 (Longer B1 30W)" }
+notes = "Purple or pink color."
+
+[[recipes]]
+id = "longer-b1-40w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 6000
+power_min_pct = 0.0
+power_max_pct = 60.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "481983e8-72b3-46b3-a174-1f81e8ca7e52 (Longer B1 40W)" }
+notes = "Purple or pink color."

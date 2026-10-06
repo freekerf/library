@@ -1,0 +1,16 @@
+id = "lasergrbl-solid-wood-3mm"
+name = "Solid Wood"
+category = "wood"
+thickness_mm = 3.0
+
+[[recipes]]
+id = "sculpfun-s9-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 900
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "280a8bd7-7d89-4558-b90f-17f75986d55a (SculpFun S9)" }
+notes = "Reference value, adjust according to the actual engraving situation"

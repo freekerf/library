@@ -1,0 +1,28 @@
+id = "lasergrbl-basswood-20mm"
+name = "Basswood"
+category = "wood"
+thickness_mm = 20.0
+
+[[recipes]]
+id = "algo-alm-22bd-22w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 15
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "dd16e92c-031b-4631-a0fd-dde18162c736 (Algo ALM-22BD (22W))" }
+notes = "Drop the focal length by 1mm"
+
+[[recipes]]
+id = "longer-b1-40w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "caa568b6-d28e-439f-be83-9da15b5ff58d (Longer B1 40W)" }
+notes = "Defocus 10mm"

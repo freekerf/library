@@ -1,0 +1,306 @@
+{
+  "$defs": {
+    "Features": {
+      "additionalProperties": false,
+      "description": "Optional hardware features.",
+      "properties": {
+        "air_assist": {
+          "description": "Air assist available.",
+          "type": "boolean"
+        },
+        "camera": {
+          "description": "Camera available.",
+          "type": "boolean"
+        },
+        "rotary": {
+          "description": "Rotary attachment supported.",
+          "type": "boolean"
+        },
+        "z_axis": {
+          "description": "Motorised Z axis.",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "air_assist",
+        "rotary",
+        "camera",
+        "z_axis"
+      ],
+      "type": "object"
+    },
+    "Firmware": {
+      "additionalProperties": false,
+      "description": "Controller firmware.",
+      "properties": {
+        "kind": {
+          "$ref": "#/$defs/FirmwareKind",
+          "description": "Firmware family."
+        },
+        "min_version": {
+          "description": "Minimum firmware version the profile was written for.",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "kind"
+      ],
+      "type": "object"
+    },
+    "FirmwareKind": {
+      "description": "Firmware family.",
+      "oneOf": [
+        {
+          "const": "grbl",
+          "description": "Grbl 1.1.",
+          "type": "string"
+        },
+        {
+          "const": "grbl_hal",
+          "description": "grblHAL.",
+          "type": "string"
+        },
+        {
+          "const": "smoothieware",
+          "description": "Smoothieware.",
+          "type": "string"
+        },
+        {
+          "const": "marlin",
+          "description": "Marlin.",
+          "type": "string"
+        }
+      ]
+    },
+    "FirmwareSetting": {
+      "additionalProperties": false,
+      "description": "A recommended firmware setting.",
+      "properties": {
+        "description": {
+          "description": "What the setting does / why this value.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "key": {
+          "description": "Setting key, e.g. `$32`.",
+          "pattern": "^\\$[0-9]+$",
+          "type": "string"
+        },
+        "value": {
+          "description": "Value, kept as text to preserve the exact format.",
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "key",
+        "value",
+        "description"
+      ],
+      "type": "object"
+    },
+    "LaserKind": {
+      "description": "Laser source technology.",
+      "oneOf": [
+        {
+          "const": "diode",
+          "description": "Semiconductor (blue/IR) diode module.",
+          "type": "string"
+        },
+        {
+          "const": "co2",
+          "description": "CO₂ glass or RF tube.",
+          "type": "string"
+        },
+        {
+          "const": "fiber",
+          "description": "Fiber laser (usually galvo).",
+          "type": "string"
+        }
+      ]
+    },
+    "LaserSource": {
+      "additionalProperties": false,
+      "description": "A laser source described by technology and real optical output power.",
+      "properties": {
+        "kind": {
+          "$ref": "#/$defs/LaserKind",
+          "description": "Laser technology."
+        },
+        "power_w": {
+          "description": "Real optical output power, in watts (not the electrical/marketing figure).",
+          "format": "double",
+          "maximum": 500.0,
+          "minimum": 0.1,
+          "type": "number",
+          "x-unit": "W"
+        }
+      },
+      "required": [
+        "kind",
+        "power_w"
+      ],
+      "type": "object"
+    },
+    "Origin": {
+      "description": "Machine origin corner.",
+      "oneOf": [
+        {
+          "const": "front_left",
+          "description": "Front left (Grbl default).",
+          "type": "string"
+        },
+        {
+          "const": "front_right",
+          "description": "Front right.",
+          "type": "string"
+        },
+        {
+          "const": "rear_left",
+          "description": "Rear left.",
+          "type": "string"
+        },
+        {
+          "const": "rear_right",
+          "description": "Rear right.",
+          "type": "string"
+        },
+        {
+          "const": "center",
+          "description": "Centre (typical for galvo heads).",
+          "type": "string"
+        }
+      ]
+    },
+    "WorkArea": {
+      "additionalProperties": false,
+      "description": "Usable work area in millimetres.",
+      "properties": {
+        "x_mm": {
+          "description": "X travel in millimetres.",
+          "format": "double",
+          "maximum": 5000.0,
+          "minimum": 10.0,
+          "type": "number",
+          "x-unit": "mm"
+        },
+        "y_mm": {
+          "description": "Y travel in millimetres.",
+          "format": "double",
+          "maximum": 5000.0,
+          "minimum": 10.0,
+          "type": "number",
+          "x-unit": "mm"
+        },
+        "z_mm": {
+          "description": "Z travel in millimetres, when the machine has a Z axis.",
+          "format": "double",
+          "maximum": 1000.0,
+          "minimum": 1.0,
+          "type": [
+            "number",
+            "null"
+          ],
+          "x-unit": "mm"
+        }
+      },
+      "required": [
+        "x_mm",
+        "y_mm"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://raw.githubusercontent.com/freekerf/library/main/schema/v1/machine.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "A machine profile.",
+  "properties": {
+    "electrical_power_w": {
+      "description": "Electrical/marketing power of the module in watts, when different from the optical one.",
+      "format": "double",
+      "maximum": 2000.0,
+      "minimum": 0.1,
+      "type": [
+        "number",
+        "null"
+      ],
+      "x-unit": "W"
+    },
+    "features": {
+      "$ref": "#/$defs/Features",
+      "description": "Optional hardware features."
+    },
+    "firmware": {
+      "$ref": "#/$defs/Firmware",
+      "description": "Controller firmware."
+    },
+    "id": {
+      "description": "Unique identifier; must match the file name (`<id>.toml`).",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "type": "string"
+    },
+    "laser": {
+      "$ref": "#/$defs/LaserSource",
+      "description": "Installed laser module, with its real optical power."
+    },
+    "manufacturer": {
+      "description": "Manufacturer (use `Generic` for reference profiles).",
+      "minLength": 1,
+      "type": "string"
+    },
+    "max_speed_mm_min": {
+      "description": "Maximum feed rate in millimetres per minute.",
+      "format": "uint32",
+      "maximum": 1200000,
+      "minimum": 1,
+      "type": [
+        "integer",
+        "null"
+      ],
+      "x-unit": "mm/min"
+    },
+    "model": {
+      "description": "Model name.",
+      "minLength": 1,
+      "type": "string"
+    },
+    "notes": {
+      "description": "Free-form notes.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "origin": {
+      "$ref": "#/$defs/Origin",
+      "description": "Machine origin (home corner)."
+    },
+    "settings": {
+      "description": "Recommended Grbl/grblHAL `$$` settings.",
+      "items": {
+        "$ref": "#/$defs/FirmwareSetting"
+      },
+      "type": "array"
+    },
+    "work_area": {
+      "$ref": "#/$defs/WorkArea",
+      "description": "Usable work area."
+    }
+  },
+  "required": [
+    "id",
+    "manufacturer",
+    "model",
+    "work_area",
+    "firmware",
+    "origin",
+    "features",
+    "laser"
+  ],
+  "title": "FreeKerf machine profile (v1)",
+  "type": "object"
+}

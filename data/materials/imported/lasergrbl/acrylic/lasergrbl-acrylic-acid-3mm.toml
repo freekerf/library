@@ -1,0 +1,15 @@
+id = "lasergrbl-acrylic-acid-3mm"
+name = "Acrylic acid"
+category = "acrylic"
+thickness_mm = 3.0
+
+[[recipes]]
+id = "longer-b1-30w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 360
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "f147f1a7-caf1-430d-8dd7-a4bbe5b78c02 (Longer B1 30W)" }

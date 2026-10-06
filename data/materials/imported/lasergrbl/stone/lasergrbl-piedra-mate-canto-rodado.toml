@@ -1,0 +1,14 @@
+id = "lasergrbl-piedra-mate-canto-rodado"
+name = "Piedra mate (Canto rodado)"
+category = "stone"
+
+[[recipes]]
+id = "leon3d-l40-5-5w-engrave"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 100
+power_min_pct = 0.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "638516d1-930f-46e0-85da-32f1a2c4e8c6 (LEON3D L40 (5.5W))" }

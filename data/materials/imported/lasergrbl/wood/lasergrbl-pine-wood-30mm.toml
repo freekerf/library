@@ -1,0 +1,16 @@
+id = "lasergrbl-pine-wood-30mm"
+name = "Pine wood"
+category = "wood"
+thickness_mm = 30.0
+
+[[recipes]]
+id = "longer-b1-40w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 3
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "72ed9388-eb33-4cf0-a043-6e6f840297c3 (Longer B1 40W)" }
+notes = "Defocus 10mm"

@@ -1,0 +1,15 @@
+id = "lasergrbl-mdf-8mm"
+name = "MDF"
+category = "engineered_wood"
+thickness_mm = 8.0
+
+[[recipes]]
+id = "atomstack-x20-pro-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 400
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 7
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "8d817dff-59b0-4e5f-9f34-96a5941dd5fd (Atomstack X20 Pro)" }

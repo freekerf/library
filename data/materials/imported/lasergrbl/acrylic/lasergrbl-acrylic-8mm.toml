@@ -1,0 +1,27 @@
+id = "lasergrbl-acrylic-8mm"
+name = "Acrylic"
+category = "acrylic"
+thickness_mm = 8.0
+
+[[recipes]]
+id = "algo-alm-22bd-22w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "f1c9fd03-a4f4-4771-b45d-4f9699ddefd7 (Algo ALM-22BD (22W))" }
+notes = "There is an irritating odor when cutting, so cut with caution"
+
+[[recipes]]
+id = "longer-ray5-or-b1-20w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "4034df4e-6bf3-4011-a409-2849feaf879f (Longer RAY5 or B1 20W)" }

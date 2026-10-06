@@ -1,0 +1,96 @@
+id = "lasergrbl-basswood-5mm"
+name = "Basswood"
+category = "wood"
+thickness_mm = 5.0
+
+[[recipes]]
+id = "algo-alm-22bd-22w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 300
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "6de45bbf-05e7-455a-bc5f-e25af2b2a1cb (Algo ALM-22BD (22W))" }
+
+[[recipes]]
+id = "longer-b1-30w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 480
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "089d00af-2ef5-467f-b021-1b5c8043ce69 (Longer B1 30W)" }
+
+[[recipes]]
+id = "longer-b1-40w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 900
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "04b40c5c-d0bb-4859-9491-6c2253cf544f (Longer B1 40W)" }
+
+[[recipes]]
+id = "longer-ray5-or-b1-20w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 450
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "820eadef-61f8-4c91-b4f3-4490c2867385 (Longer RAY5 or B1 20W)" }
+
+[[recipes]]
+id = "mecolour-m6w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 6.0 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "e833a995-ca67-4347-a235-b034d652051f (MECOLOUR M6W)" }
+notes = "The focus before cutting needs to be in the middle of the object to be cut, and the focus is different for different thicknesses."
+
+[[recipes]]
+id = "two-trees-ts2-55-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "46522b5c-86ee-4e83-96ca-e59cfc9194f2 (Two Trees TS2-55)" }
+notes = "The focus before cutting needs to be in the middle of the object to be cut, and the focus is different for different thicknesses."
+
+[[recipes]]
+id = "two-trees-ts3-55-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "1da88a36-6c92-431e-af18-eb86ce52f14d (Two Trees TS3-55)" }
+notes = "The focus before cutting needs to be in the middle of the object to be cut, and the focus is different for different thicknesses."
+
+[[recipes]]
+id = "two-trees-tts-55-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "2860a392-9324-4cc8-9217-8bc1fc463a3c (Two Trees TTS-55)" }
+notes = "The focus before cutting needs to be in the middle of the object to be cut, and the focus is different for different thicknesses."
