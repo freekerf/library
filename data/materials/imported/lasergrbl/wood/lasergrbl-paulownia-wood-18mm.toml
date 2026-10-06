@@ -1,0 +1,15 @@
+id = "lasergrbl-paulownia-wood-18mm"
+name = "Paulownia wood"
+category = "wood"
+thickness_mm = 18.0
+
+[[recipes]]
+id = "atomstack-x20-pro-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 400
+power_min_pct = 80.0
+power_max_pct = 80.0
+passes = 6
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "9ddb16d3-cf0e-41e6-8ca1-b37e03e279ef (Atomstack X20 Pro)" }

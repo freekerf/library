@@ -1,0 +1,38 @@
+id = "lasergrbl-mdf-12mm"
+name = "MDF"
+category = "engineered_wood"
+thickness_mm = 12.0
+
+[[recipes]]
+id = "algo-alm-22bd-22w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 300
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 6
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "97028911-ba44-4ce1-933c-0ca9dc0d385b (Algo ALM-22BD (22W))" }
+
+[[recipes]]
+id = "longer-b1-30w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 240
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 10
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "e1e6f156-f058-44c4-8163-162d1d3a6b97 (Longer B1 30W)" }
+
+[[recipes]]
+id = "longer-b1-40w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 500
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 5
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "e2125ed3-b56b-4c7f-9f93-04cf829719c8 (Longer B1 40W)" }
+notes = "Defocus 2.5mm"

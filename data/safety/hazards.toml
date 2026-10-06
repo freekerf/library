@@ -1,0 +1,111 @@
+# Hazardous materials. Keywords are lowercase, accent-free whole words matched
+# against material names (English, Portuguese and Spanish).
+# severity = "block": never process; the library rejects such materials.
+# severity = "warn": the app must alert the user before processing.
+
+[[hazards]]
+id = "pvc"
+name = "PVC / vinyl"
+severity = "block"
+keywords = ["pvc", "vinyl", "vinil", "vinilo", "polyvinyl chloride", "poly vinyl chloride", "policloreto de vinila", "cloruro de polivinilo"]
+reason = "Releases hydrogen chloride (hydrochloric acid) and chlorine compounds: toxic to people and corrodes the machine."
+emissions = ["hydrogen chloride", "chlorine compounds", "dioxins"]
+
+[[hazards]]
+id = "polycarbonate"
+name = "Polycarbonate"
+severity = "block"
+keywords = ["polycarbonate", "policarbonato", "lexan", "makrolon"]
+reason = "Does not cut cleanly, catches fire and releases toxic fumes; it absorbs CO2 laser energy poorly."
+emissions = ["toxic fumes", "fire risk"]
+
+[[hazards]]
+id = "fiberglass"
+name = "Fiberglass and coated carbon fiber"
+severity = "block"
+keywords = ["fiberglass", "fibreglass", "fibra de vidro", "fibra de vidrio", "fr4", "g10", "carbon fiber", "carbon fibre", "fibra de carbono"]
+reason = "Glass does not cut and the epoxy resin releases toxic fumes; carbon fiber dust and resin fumes are hazardous."
+emissions = ["epoxy fumes", "fine glass or carbon dust"]
+
+[[hazards]]
+id = "chrome-tanned-leather"
+name = "Chrome-tanned leather"
+severity = "block"
+keywords = ["chrome tanned", "chrome leather", "couro cromo", "couro curtido ao cromo", "cuero al cromo"]
+reason = "Releases hexavalent chromium compounds, which are carcinogenic."
+emissions = ["hexavalent chromium"]
+
+[[hazards]]
+id = "ptfe"
+name = "PTFE (Teflon)"
+severity = "block"
+keywords = ["ptfe", "teflon"]
+reason = "Releases fluorinated gases (e.g. hydrogen fluoride) that are highly toxic."
+emissions = ["hydrogen fluoride", "fluorinated gases"]
+
+[[hazards]]
+id = "neoprene"
+name = "Neoprene (chloroprene rubber)"
+severity = "block"
+keywords = ["neoprene", "neopreno", "chloroprene", "cloropreno"]
+reason = "Chlorinated rubber: releases hydrogen chloride, like PVC."
+emissions = ["hydrogen chloride"]
+
+[[hazards]]
+id = "leather"
+name = "Leather of unknown tanning"
+severity = "warn"
+keywords = ["leather", "couro", "cuero"]
+unless = ["vegetable tanned", "veg tan", "curtido vegetal", "curtimento vegetal", "curtido al vegetal"]
+reason = "Most leather is chrome-tanned (hexavalent chromium fumes). Use only vegetable-tanned leather and good extraction."
+emissions = ["hexavalent chromium (if chrome-tanned)"]
+
+[[hazards]]
+id = "faux-leather"
+name = "Faux leather / leatherette"
+severity = "warn"
+keywords = ["faux leather", "leatherette", "pleather", "couro sintetico", "courino", "cuero sintetico"]
+reason = "Often PVC-based; process only if the supplier confirms it is PU (polyurethane)."
+emissions = ["hydrogen chloride (if PVC)", "hydrogen cyanide (PU)"]
+
+[[hazards]]
+id = "abs"
+name = "ABS"
+severity = "warn"
+keywords = ["abs"]
+reason = "Melts rather than vaporizes and releases hydrogen cyanide and styrene; engrave lightly with strong extraction, do not cut."
+emissions = ["hydrogen cyanide", "styrene"]
+
+[[hazards]]
+id = "foam"
+name = "Polyurethane and polystyrene foams"
+severity = "warn"
+keywords = ["foam", "espuma", "polyurethane", "poliuretano", "polystyrene", "poliestireno", "styrofoam", "isopor"]
+unless = ["eva"]
+reason = "Highly flammable; polyurethane releases hydrogen cyanide. EVA foam is the usual safe choice."
+emissions = ["hydrogen cyanide", "styrene", "fire risk"]
+
+[[hazards]]
+id = "hdpe"
+name = "HDPE"
+severity = "warn"
+keywords = ["hdpe", "polyethylene", "polietileno"]
+reason = "Melts and catches fire easily; produces poor results."
+emissions = ["fire risk"]
+
+[[hazards]]
+id = "rubber"
+name = "Rubber of unknown composition"
+severity = "warn"
+keywords = ["rubber", "borracha", "goma", "caucho"]
+unless = ["laser rubber", "laser safe rubber"]
+reason = "Many synthetic rubbers contain chlorine or sulphur. Use only rubber sold as laser-safe."
+emissions = ["sulphur compounds", "hydrogen chloride (if chlorinated)"]
+
+[[hazards]]
+id = "galvanized"
+name = "Galvanized metal"
+severity = "warn"
+keywords = ["galvanized", "galvanizado", "zincado"]
+reason = "Zinc coating releases zinc oxide fumes (metal fume fever) when heated."
+emissions = ["zinc oxide"]

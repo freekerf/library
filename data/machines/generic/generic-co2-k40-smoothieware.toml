@@ -1,0 +1,23 @@
+id = "generic-co2-k40-smoothieware"
+manufacturer = "Generic"
+model = "K40 CO2 (≈ 300 × 200 mm) with Smoothieware board"
+origin = "rear_left"
+electrical_power_w = 40
+notes = "K40 tubes are sold as 40 W but deliver about 30–35 W. Configure Smoothieware's laser module in its config file; Grbl `$$` settings do not apply."
+
+[work_area]
+x_mm = 300
+y_mm = 200
+
+[firmware]
+kind = "smoothieware"
+
+[features]
+air_assist = false
+rotary = false
+camera = false
+z_axis = false
+
+[laser]
+kind = "co2"
+power_w = 32

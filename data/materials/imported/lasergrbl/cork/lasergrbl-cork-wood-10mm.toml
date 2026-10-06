@@ -1,0 +1,15 @@
+id = "lasergrbl-cork-wood-10mm"
+name = "Cork wood"
+category = "cork"
+thickness_mm = 10.0
+
+[[recipes]]
+id = "atomstack-x20-pro-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 420
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "0e4fe5f9-0032-4bf0-b3ce-ac822b80d0e8 (Atomstack X20 Pro)" }

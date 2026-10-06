@@ -1,0 +1,531 @@
+{
+  "$defs": {
+    "Confidence": {
+      "description": "Confidence level of a recipe. Apps must never present `estimated` as guaranteed.",
+      "oneOf": [
+        {
+          "additionalProperties": false,
+          "description": "Verified with a test grid; evidence and author are mandatory.",
+          "properties": {
+            "author": {
+              "description": "Who ran the test.",
+              "minLength": 1,
+              "type": "string"
+            },
+            "date": {
+              "description": "Test date (ISO 8601, `YYYY-MM-DD`).",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "evidence": {
+              "description": "Photos of the test grid: repository paths (`evidence/...`) or https URLs.",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            "level": {
+              "const": "tested",
+              "type": "string"
+            }
+          },
+          "required": [
+            "level",
+            "author",
+            "evidence"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "description": "Reported by the community without evidence.",
+          "properties": {
+            "level": {
+              "const": "community",
+              "type": "string"
+            },
+            "reported_by": {
+              "description": "Who reported it, when known.",
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "level"
+          ],
+          "type": "object"
+        },
+        {
+          "additionalProperties": false,
+          "description": "Derived (e.g. by power scaling) and not verified.",
+          "properties": {
+            "derived_from": {
+              "description": "Recipe the values were derived from (`<material-id>/<recipe-id>`), when any.",
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "level": {
+              "const": "estimated",
+              "type": "string"
+            },
+            "method": {
+              "description": "How the values were obtained.",
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "level",
+            "method"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "Dithering": {
+      "description": "Dithering algorithm recommended for raster engraving.",
+      "oneOf": [
+        {
+          "const": "none",
+          "description": "No dithering: pass the image through (vector-like fills).",
+          "type": "string"
+        },
+        {
+          "const": "threshold",
+          "description": "Simple black/white threshold.",
+          "type": "string"
+        },
+        {
+          "const": "grayscale",
+          "description": "Power modulated by grey level.",
+          "type": "string"
+        },
+        {
+          "const": "floyd_steinberg",
+          "description": "Floyd–Steinberg error diffusion.",
+          "type": "string"
+        },
+        {
+          "const": "jarvis",
+          "description": "Jarvis–Judice–Ninke error diffusion.",
+          "type": "string"
+        },
+        {
+          "const": "stucki",
+          "description": "Stucki error diffusion.",
+          "type": "string"
+        },
+        {
+          "const": "atkinson",
+          "description": "Atkinson error diffusion.",
+          "type": "string"
+        },
+        {
+          "const": "ordered",
+          "description": "Ordered (Bayer) dithering.",
+          "type": "string"
+        }
+      ]
+    },
+    "LaserKind": {
+      "description": "Laser source technology.",
+      "oneOf": [
+        {
+          "const": "diode",
+          "description": "Semiconductor (blue/IR) diode module.",
+          "type": "string"
+        },
+        {
+          "const": "co2",
+          "description": "CO₂ glass or RF tube.",
+          "type": "string"
+        },
+        {
+          "const": "fiber",
+          "description": "Fiber laser (usually galvo).",
+          "type": "string"
+        }
+      ]
+    },
+    "LaserSource": {
+      "additionalProperties": false,
+      "description": "A laser source described by technology and real optical output power.",
+      "properties": {
+        "kind": {
+          "$ref": "#/$defs/LaserKind",
+          "description": "Laser technology."
+        },
+        "power_w": {
+          "description": "Real optical output power, in watts (not the electrical/marketing figure).",
+          "format": "double",
+          "maximum": 500.0,
+          "minimum": 0.1,
+          "type": "number",
+          "x-unit": "W"
+        }
+      },
+      "required": [
+        "kind",
+        "power_w"
+      ],
+      "type": "object"
+    },
+    "MaterialCategory": {
+      "description": "Material family, used for grouping and safety screening.",
+      "oneOf": [
+        {
+          "const": "wood",
+          "description": "Solid wood (basswood, pine, bamboo…).",
+          "type": "string"
+        },
+        {
+          "const": "engineered_wood",
+          "description": "Plywood, MDF, HDF.",
+          "type": "string"
+        },
+        {
+          "const": "acrylic",
+          "description": "Cast or extruded PMMA.",
+          "type": "string"
+        },
+        {
+          "const": "leather",
+          "description": "Leather and leather-like materials.",
+          "type": "string"
+        },
+        {
+          "const": "paper",
+          "description": "Paper, card and cardboard.",
+          "type": "string"
+        },
+        {
+          "const": "textile",
+          "description": "Cloth, felt, denim.",
+          "type": "string"
+        },
+        {
+          "const": "anodized_metal",
+          "description": "Anodized aluminium.",
+          "type": "string"
+        },
+        {
+          "const": "coated_metal",
+          "description": "Painted, powder coated or plated metal.",
+          "type": "string"
+        },
+        {
+          "const": "metal",
+          "description": "Bare metal.",
+          "type": "string"
+        },
+        {
+          "const": "stone",
+          "description": "Natural or artificial stone, slate.",
+          "type": "string"
+        },
+        {
+          "const": "glass",
+          "description": "Glass and mirrors.",
+          "type": "string"
+        },
+        {
+          "const": "ceramic",
+          "description": "Ceramics, tiles, clay.",
+          "type": "string"
+        },
+        {
+          "const": "plastic",
+          "description": "Other plastics.",
+          "type": "string"
+        },
+        {
+          "const": "foam",
+          "description": "Foams (EVA, foam board…).",
+          "type": "string"
+        },
+        {
+          "const": "rubber",
+          "description": "Rubber and silicone.",
+          "type": "string"
+        },
+        {
+          "const": "cork",
+          "description": "Cork.",
+          "type": "string"
+        },
+        {
+          "const": "other",
+          "description": "Anything else.",
+          "type": "string"
+        }
+      ]
+    },
+    "Operation": {
+      "description": "Process operation performed by a recipe.",
+      "oneOf": [
+        {
+          "const": "cut",
+          "description": "Through cut.",
+          "type": "string"
+        },
+        {
+          "const": "engrave_vector",
+          "description": "Vector (line) engraving / scoring.",
+          "type": "string"
+        },
+        {
+          "const": "engrave_raster",
+          "description": "Raster (image/fill) engraving.",
+          "type": "string"
+        }
+      ]
+    },
+    "Recipe": {
+      "additionalProperties": false,
+      "description": "Parameters for one operation with one laser source.",
+      "properties": {
+        "air_assist": {
+          "description": "Whether air assist is required (`true`), must be off (`false`) or does not matter (omitted).",
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "confidence": {
+          "$ref": "#/$defs/Confidence",
+          "description": "How much this recipe can be trusted."
+        },
+        "dithering": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Dithering"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Recommended dithering (raster engraving only)."
+        },
+        "dpi": {
+          "description": "Raster resolution in dots per inch (raster engraving only).",
+          "format": "uint32",
+          "maximum": 5080,
+          "minimum": 10,
+          "type": [
+            "integer",
+            "null"
+          ],
+          "x-unit": "dpi"
+        },
+        "focus_offset_mm": {
+          "description": "Focus offset from the material surface in millimetres (negative = into the material).",
+          "format": "double",
+          "maximum": 50.0,
+          "minimum": -50.0,
+          "type": [
+            "number",
+            "null"
+          ],
+          "x-unit": "mm"
+        },
+        "id": {
+          "description": "Identifier, unique within the material.",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "type": "string"
+        },
+        "laser": {
+          "$ref": "#/$defs/LaserSource",
+          "description": "Laser source the recipe was made for."
+        },
+        "line_interval_mm": {
+          "description": "Raster line interval in millimetres (raster engraving only).",
+          "format": "double",
+          "maximum": 2.0,
+          "minimum": 0.005,
+          "type": [
+            "number",
+            "null"
+          ],
+          "x-unit": "mm"
+        },
+        "machine": {
+          "description": "Optional machine profile id (`data/machines`) the recipe was made on.",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "description": "Free-form notes.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "operation": {
+          "$ref": "#/$defs/Operation",
+          "description": "Operation performed."
+        },
+        "passes": {
+          "description": "Number of passes.",
+          "format": "uint32",
+          "maximum": 100,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "power_max_pct": {
+          "description": "Maximum power, percentage of the source's maximum (S-max).",
+          "format": "double",
+          "maximum": 100.0,
+          "minimum": 0.0,
+          "type": "number",
+          "x-unit": "%"
+        },
+        "power_min_pct": {
+          "description": "Minimum power, percentage of the source's maximum (S-min).",
+          "format": "double",
+          "maximum": 100.0,
+          "minimum": 0.0,
+          "type": "number",
+          "x-unit": "%"
+        },
+        "source": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Source"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Provenance when the data comes from a third party."
+        },
+        "speed_mm_min": {
+          "description": "Feed rate in millimetres per minute.",
+          "format": "uint32",
+          "maximum": 1200000,
+          "minimum": 1,
+          "type": "integer",
+          "x-unit": "mm/min"
+        }
+      },
+      "required": [
+        "id",
+        "operation",
+        "laser",
+        "speed_mm_min",
+        "power_min_pct",
+        "power_max_pct",
+        "passes",
+        "confidence"
+      ],
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "description": "Provenance of third-party data.",
+      "properties": {
+        "license": {
+          "description": "SPDX license expression of the origin (must be GPL-3.0 compatible).",
+          "minLength": 1,
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of the origin (e.g. `LaserGRBL StandardMaterials.psh`).",
+          "minLength": 1,
+          "type": "string"
+        },
+        "reference": {
+          "description": "Record reference inside the origin (row id, model…).",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "url": {
+          "description": "URL of the origin, pinned to a revision when possible.",
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "license"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://raw.githubusercontent.com/freekerf/library/main/schema/v1/material.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "A material and its process recipes.",
+  "properties": {
+    "category": {
+      "$ref": "#/$defs/MaterialCategory",
+      "description": "Material family."
+    },
+    "id": {
+      "description": "Unique identifier; must match the file name (`<id>.toml`).",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "type": "string"
+    },
+    "name": {
+      "description": "Human readable name.",
+      "maxLength": 120,
+      "minLength": 1,
+      "type": "string"
+    },
+    "notes": {
+      "description": "Free-form notes.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "recipes": {
+      "description": "Process recipes for this material (at least one).",
+      "items": {
+        "$ref": "#/$defs/Recipe"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "supplier": {
+      "description": "Optional supplier or product reference.",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "thickness_mm": {
+      "description": "Nominal thickness in millimetres. Omit for surface-only materials (engraving).",
+      "format": "double",
+      "maximum": 100.0,
+      "minimum": 0.01,
+      "type": [
+        "number",
+        "null"
+      ],
+      "x-unit": "mm"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "category",
+    "recipes"
+  ],
+  "title": "FreeKerf material (v1)",
+  "type": "object"
+}

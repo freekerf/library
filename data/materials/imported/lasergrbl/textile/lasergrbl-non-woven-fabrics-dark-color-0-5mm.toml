@@ -1,0 +1,50 @@
+id = "lasergrbl-non-woven-fabrics-dark-color-0-5mm"
+name = "Non-woven fabrics (dark color)"
+category = "textile"
+thickness_mm = 0.5
+
+[[recipes]]
+id = "leon3d-l40-5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 1600
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "4f44f596-50f3-4a78-9909-53f43d065823 (LEON3D L40 (5.5W))" }
+
+[[recipes]]
+id = "leon3d-l60-10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 1600
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "ddb6a1cd-a967-4dc7-a41b-7a4483ff84e2 (LEON3D L60 (10w))" }
+
+[[recipes]]
+id = "ortur-lu20w-5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 1600
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "c033ab40-7a52-4b9f-88fc-8b5e636a8704 (Ortur LU20W (5.5W))" }
+notes = "It need to be adjusted based on different colors. There will be black edges after cutting"
+
+[[recipes]]
+id = "ortur-lu7w-1-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 1.5 }
+speed_mm_min = 500
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "a9358fb5-a97f-4c1c-82bc-def9f9de67da (Ortur LU7W (1.5W))" }
+notes = "Cannot cut Non-woven in white color. It need to be adjusted based on different colors. There will be black edges after cutting"

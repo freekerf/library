@@ -1,0 +1,16 @@
+id = "lasergrbl-colored-a4-paper-0-2mm"
+name = "Colored A4 Paper"
+category = "paper"
+thickness_mm = 0.2
+
+[[recipes]]
+id = "algo-alm-22bd-22w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 10000
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "bb5cd378-6e08-4f72-a859-e32d35875fb0 (Algo ALM-22BD (22W))" }
+notes = "-"

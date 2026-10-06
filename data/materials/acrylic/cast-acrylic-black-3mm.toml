@@ -1,0 +1,27 @@
+id = "cast-acrylic-black-3mm"
+name = "Cast acrylic, black (opaque)"
+category = "acrylic"
+thickness_mm = 3
+notes = "Opaque dark acrylic absorbs blue diode light and can be cut slowly with a diode laser."
+
+[[recipes]]
+id = "diode-10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10 }
+speed_mm_min = 150
+power_min_pct = 100
+power_max_pct = 100
+passes = 3
+air_assist = true
+confidence = { level = "estimated", method = "Starting values from common practice, compiled by the maintainers; run a test grid before relying on them." }
+
+[[recipes]]
+id = "co2-50w-cut"
+operation = "cut"
+laser = { kind = "co2", power_w = 50 }
+speed_mm_min = 600
+power_min_pct = 60
+power_max_pct = 65
+passes = 1
+air_assist = true
+confidence = { level = "estimated", method = "Starting values from common practice, compiled by the maintainers; run a test grid before relying on them." }

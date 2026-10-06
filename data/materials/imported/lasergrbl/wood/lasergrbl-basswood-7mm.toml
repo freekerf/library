@@ -1,0 +1,40 @@
+id = "lasergrbl-basswood-7mm"
+name = "Basswood"
+category = "wood"
+thickness_mm = 7.0
+
+[[recipes]]
+id = "mecolour-m10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "3bafdbbd-b591-45ee-a217-b41d3480b863 (MECOLOUR M10W)" }
+notes = "The focus before cutting needs to be in the middle of the object to be cut, and the focus is different for different thicknesses."
+
+[[recipes]]
+id = "two-trees-ts2-10-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "9181f0e1-3107-4973-9d0b-0b760bfeb174 (Two Trees TS2-10)" }
+notes = "The focus before cutting needs to be in the middle of the object to be cut, and the focus is different for different thicknesses."
+
+[[recipes]]
+id = "two-trees-ts3-10-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "4c1c7077-bdaa-4d08-a0b9-7da590e8a6b7 (Two Trees TS3-10)" }
+notes = "The focus before cutting needs to be in the middle of the object to be cut, and the focus is different for different thicknesses."

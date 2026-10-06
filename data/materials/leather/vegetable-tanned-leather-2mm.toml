@@ -1,0 +1,28 @@
+id = "vegetable-tanned-leather-2mm"
+name = "Vegetable-tanned leather"
+category = "leather"
+thickness_mm = 2
+notes = "Only vegetable-tanned leather. Chrome-tanned leather is blocked (hexavalent chromium)."
+
+[[recipes]]
+id = "diode-10w-engrave-raster"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10 }
+speed_mm_min = 3000
+power_min_pct = 0
+power_max_pct = 25
+passes = 1
+dpi = 254
+dithering = "jarvis"
+confidence = { level = "estimated", method = "Starting values from common practice, compiled by the maintainers; run a test grid before relying on them." }
+
+[[recipes]]
+id = "co2-50w-cut"
+operation = "cut"
+laser = { kind = "co2", power_w = 50 }
+speed_mm_min = 1200
+power_min_pct = 40
+power_max_pct = 45
+passes = 1
+air_assist = true
+confidence = { level = "estimated", method = "Starting values from common practice, compiled by the maintainers; run a test grid before relying on them." }

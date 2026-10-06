@@ -1,0 +1,41 @@
+id = "anodized-aluminum"
+name = "Anodized aluminum"
+category = "anodized_metal"
+notes = "The laser removes or bleaches the anodized layer; it does not engrave the metal itself (except fiber lasers)."
+
+[[recipes]]
+id = "diode-10w-engrave-raster"
+operation = "engrave_raster"
+laser = { kind = "diode", power_w = 10 }
+speed_mm_min = 3000
+power_min_pct = 0
+power_max_pct = 80
+passes = 1
+dpi = 254
+dithering = "threshold"
+confidence = { level = "estimated", method = "Starting values from common practice, compiled by the maintainers; run a test grid before relying on them." }
+
+[[recipes]]
+id = "co2-50w-engrave-raster"
+operation = "engrave_raster"
+laser = { kind = "co2", power_w = 50 }
+speed_mm_min = 18000
+power_min_pct = 25
+power_max_pct = 30
+passes = 1
+line_interval_mm = 0.08
+dithering = "threshold"
+confidence = { level = "estimated", method = "Starting values from common practice, compiled by the maintainers; run a test grid before relying on them." }
+
+[[recipes]]
+id = "fiber-30w-engrave-raster"
+operation = "engrave_raster"
+laser = { kind = "fiber", power_w = 30 }
+speed_mm_min = 120000
+power_min_pct = 60
+power_max_pct = 70
+passes = 1
+line_interval_mm = 0.03
+dithering = "threshold"
+notes = "Galvo fiber: 2000 mm/s. Frequency and pulse width are not modelled in schema v1."
+confidence = { level = "estimated", method = "Starting values from common practice, compiled by the maintainers; run a test grid before relying on them." }

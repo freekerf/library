@@ -1,0 +1,27 @@
+id = "lasergrbl-mdf-10mm"
+name = "MDF"
+category = "engineered_wood"
+thickness_mm = 10.0
+
+[[recipes]]
+id = "longer-b1-30w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 320
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 7
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "34059bd9-70e3-4fe7-bfaa-b6bb7c3fdb2a (Longer B1 30W)" }
+
+[[recipes]]
+id = "longer-ray5-or-b1-20w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 300
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 6
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "9add509b-6407-43b9-993b-ba4af435ebb1 (Longer RAY5 or B1 20W)" }
+notes = "Defocus by 3mm. Be aware that the material  is flammable during cutting."

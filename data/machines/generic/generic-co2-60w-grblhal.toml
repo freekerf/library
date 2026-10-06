@@ -1,0 +1,35 @@
+id = "generic-co2-60w-grblhal"
+manufacturer = "Generic"
+model = "CO2 60 W, 600 × 400 mm, grblHAL"
+origin = "rear_left"
+max_speed_mm_min = 30000
+electrical_power_w = 60
+notes = "Reference profile for a 60 W glass-tube CO2 machine retrofitted with a grblHAL controller. Glass tubes deliver roughly 50 W real output; keep power below ~90 % to extend tube life."
+
+[work_area]
+x_mm = 600
+y_mm = 400
+z_mm = 200
+
+[firmware]
+kind = "grbl_hal"
+
+[features]
+air_assist = true
+rotary = true
+camera = false
+z_axis = true
+
+[laser]
+kind = "co2"
+power_w = 50
+
+[[settings]]
+key = "$30"
+value = "1000"
+description = "Maximum S value."
+
+[[settings]]
+key = "$32"
+value = "1"
+description = "Laser mode."

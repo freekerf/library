@@ -1,0 +1,27 @@
+id = "wool-felt-3mm"
+name = "Wool felt"
+category = "textile"
+thickness_mm = 3
+notes = "100 % wool felt. Synthetic (polyester/acrylic) felt melts and may produce harmful fumes; test with extraction."
+
+[[recipes]]
+id = "diode-10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10 }
+speed_mm_min = 800
+power_min_pct = 70
+power_max_pct = 70
+passes = 1
+air_assist = true
+confidence = { level = "estimated", method = "Starting values from common practice, compiled by the maintainers; run a test grid before relying on them." }
+
+[[recipes]]
+id = "co2-50w-cut"
+operation = "cut"
+laser = { kind = "co2", power_w = 50 }
+speed_mm_min = 3000
+power_min_pct = 25
+power_max_pct = 30
+passes = 1
+air_assist = true
+confidence = { level = "estimated", method = "Starting values from common practice, compiled by the maintainers; run a test grid before relying on them." }

@@ -1,0 +1,93 @@
+{
+  "$defs": {
+    "Hazard": {
+      "additionalProperties": false,
+      "description": "A material (or family) that must never or should not be processed.",
+      "properties": {
+        "emissions": {
+          "description": "Main emissions or effects (e.g. `hydrogen chloride`).",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "id": {
+          "description": "Unique identifier.",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "type": "string"
+        },
+        "keywords": {
+          "description": "Lowercase keywords matched as whole words against material names (any language).",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "name": {
+          "description": "Display name.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "reason": {
+          "description": "Why it is dangerous.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity",
+          "description": "What the app must do when the material is selected."
+        },
+        "unless": {
+          "description": "Keywords that cancel a match (e.g. `vegetable tanned` for leather).",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "severity",
+        "keywords",
+        "reason"
+      ],
+      "type": "object"
+    },
+    "Severity": {
+      "description": "Hazard severity.",
+      "oneOf": [
+        {
+          "const": "warn",
+          "description": "Show a warning; processing is allowed with care.",
+          "type": "string"
+        },
+        {
+          "const": "block",
+          "description": "Block: never process. The library rejects materials matching it.",
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "$id": "https://raw.githubusercontent.com/freekerf/library/main/schema/v1/hazards.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "The hazard list document.",
+  "properties": {
+    "hazards": {
+      "description": "Hazard entries.",
+      "items": {
+        "$ref": "#/$defs/Hazard"
+      },
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "hazards"
+  ],
+  "title": "FreeKerf hazardous materials list (v1)",
+  "type": "object"
+}

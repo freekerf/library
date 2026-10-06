@@ -1,0 +1,15 @@
+id = "lasergrbl-pine-14mm"
+name = "Pine"
+category = "wood"
+thickness_mm = 14.0
+
+[[recipes]]
+id = "atomstack-x20-pro-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 300
+power_min_pct = 80.0
+power_max_pct = 80.0
+passes = 7
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "de59f10a-7225-45dd-83e6-b514f65a3ebc (Atomstack X20 Pro)" }

@@ -1,0 +1,15 @@
+id = "lasergrbl-pine-10mm"
+name = "Pine"
+category = "wood"
+thickness_mm = 10.0
+
+[[recipes]]
+id = "longer-ray5-or-b1-20w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 120
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "f4721639-f382-42c8-9f57-94f44d3e1f41 (Longer RAY5 or B1 20W)" }

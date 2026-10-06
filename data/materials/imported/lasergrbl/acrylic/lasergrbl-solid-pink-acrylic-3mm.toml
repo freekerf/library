@@ -1,0 +1,15 @@
+id = "lasergrbl-solid-pink-acrylic-3mm"
+name = "Solid Pink Acrylic"
+category = "acrylic"
+thickness_mm = 3.0
+
+[[recipes]]
+id = "yorahome-80-10w-optical-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 100
+power_min_pct = 85.0
+power_max_pct = 85.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "79c3e315-fed4-43c2-ac96-8bd2786124ec (YoraHome 80 (10W optical))" }

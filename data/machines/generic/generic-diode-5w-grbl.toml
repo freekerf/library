@@ -1,0 +1,34 @@
+id = "generic-diode-5w-grbl"
+manufacturer = "Generic"
+model = "Diode 5 W, 300 × 300 mm, Grbl 1.1"
+origin = "front_left"
+max_speed_mm_min = 8000
+notes = "Reference profile for compact 5 W (optical) diode engravers without air assist."
+
+[work_area]
+x_mm = 300
+y_mm = 300
+
+[firmware]
+kind = "grbl"
+min_version = "1.1f"
+
+[features]
+air_assist = false
+rotary = false
+camera = false
+z_axis = false
+
+[laser]
+kind = "diode"
+power_w = 5
+
+[[settings]]
+key = "$30"
+value = "1000"
+description = "Maximum spindle/laser S value; FreeKerf scales power 0–100 % into 0–1000."
+
+[[settings]]
+key = "$32"
+value = "1"
+description = "Laser mode: power follows motion (M4 dynamic power)."

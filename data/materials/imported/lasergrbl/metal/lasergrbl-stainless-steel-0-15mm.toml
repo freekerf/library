@@ -1,0 +1,15 @@
+id = "lasergrbl-stainless-steel-0-15mm"
+name = "Stainless Steel"
+category = "metal"
+thickness_mm = 0.15
+
+[[recipes]]
+id = "longer-b1-40w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 40.0 }
+speed_mm_min = 100
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "d9007570-ce70-430a-8f2f-08dbf38af1af (Longer B1 40W)" }

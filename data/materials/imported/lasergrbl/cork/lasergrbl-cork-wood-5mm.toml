@@ -1,0 +1,15 @@
+id = "lasergrbl-cork-wood-5mm"
+name = "Cork Wood"
+category = "cork"
+thickness_mm = 5.0
+
+[[recipes]]
+id = "longer-ray5-or-b1-20w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 500
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "012a162a-745f-41bd-95d5-4ef47fe4082e (Longer RAY5 or B1 20W)" }

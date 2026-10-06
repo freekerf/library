@@ -1,0 +1,37 @@
+id = "birch-plywood-3mm"
+name = "Birch plywood"
+category = "engineered_wood"
+thickness_mm = 3
+notes = "Glue layers vary between suppliers; interior-grade plywood with heavy glue may need an extra pass."
+
+[[recipes]]
+id = "diode-10w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10 }
+speed_mm_min = 250
+power_min_pct = 100
+power_max_pct = 100
+passes = 2
+air_assist = true
+confidence = { level = "estimated", method = "Starting values from common practice, compiled by the maintainers; run a test grid before relying on them." }
+
+[[recipes]]
+id = "diode-10w-engrave-vector"
+operation = "engrave_vector"
+laser = { kind = "diode", power_w = 10 }
+speed_mm_min = 1500
+power_min_pct = 50
+power_max_pct = 50
+passes = 1
+confidence = { level = "estimated", method = "Starting values from common practice, compiled by the maintainers; run a test grid before relying on them." }
+
+[[recipes]]
+id = "co2-50w-cut"
+operation = "cut"
+laser = { kind = "co2", power_w = 50 }
+speed_mm_min = 900
+power_min_pct = 60
+power_max_pct = 65
+passes = 1
+air_assist = true
+confidence = { level = "estimated", method = "Starting values from common practice, compiled by the maintainers; run a test grid before relying on them." }

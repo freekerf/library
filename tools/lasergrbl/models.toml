@@ -1,0 +1,35 @@
+# LaserGRBL model names whose optical power is not written in the name.
+# The importer parses names like "Ortur LU7W (1.5W)" on its own; add entries
+# here only with a verifiable source (manufacturer spec) in a comment.
+# Models that are neither parsed nor listed are skipped (see REPORT.md).
+
+# Sculpfun S9: 5.5 W optical (manufacturer spec: "5.5W output, 90W class").
+[models."SculpFun S9"]
+kind = "diode"
+power_w = 5.5
+
+# Atomstack X20 Pro: 20 W optical (manufacturer spec: "20W laser output").
+[models."Atomstack X20 Pro"]
+kind = "diode"
+power_w = 20
+
+# Two Trees model suffix gives the optical power: -55 = 5.5 W, -10 = 10 W.
+[models."Two Trees TS2-10"]
+kind = "diode"
+power_w = 10
+
+[models."Two Trees TS3-10"]
+kind = "diode"
+power_w = 10
+
+[models."Two Trees TS2-55"]
+kind = "diode"
+power_w = 5.5
+
+[models."Two Trees TS3-55"]
+kind = "diode"
+power_w = 5.5
+
+[models."Two Trees TTS-55"]
+kind = "diode"
+power_w = 5.5

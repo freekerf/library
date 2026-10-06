@@ -1,0 +1,27 @@
+id = "lasergrbl-acrylic-2mm"
+name = "Acrylic"
+category = "acrylic"
+thickness_mm = 2.0
+
+[[recipes]]
+id = "longer-ray5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.0 }
+speed_mm_min = 120
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "3d3de832-f608-4d5a-9d5e-07a40eba30d6 (Longer RAY5 5W)" }
+
+[[recipes]]
+id = "sculpfun-s9-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "0bbefeca-3942-4e2a-8efa-8bf228d187cc (SculpFun S9)" }
+notes = "Reference value, adjust according to the actual engraving situation"

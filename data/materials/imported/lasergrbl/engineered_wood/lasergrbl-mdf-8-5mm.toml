@@ -1,0 +1,15 @@
+id = "lasergrbl-mdf-8-5mm"
+name = "MDF"
+category = "engineered_wood"
+thickness_mm = 8.5
+
+[[recipes]]
+id = "longer-b1-30w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 30.0 }
+speed_mm_min = 160
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 3
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "ad8a66be-b675-4635-98aa-2a7894cc3dd0 (Longer B1 30W)" }

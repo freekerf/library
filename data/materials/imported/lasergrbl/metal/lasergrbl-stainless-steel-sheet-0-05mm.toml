@@ -1,0 +1,15 @@
+id = "lasergrbl-stainless-steel-sheet-0-05mm"
+name = "Stainless Steel Sheet"
+category = "metal"
+thickness_mm = 0.05
+
+[[recipes]]
+id = "atomstack-x20-pro-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 20.0 }
+speed_mm_min = 600
+power_min_pct = 80.0
+power_max_pct = 80.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "c7c8be56-d2eb-4ea8-942d-54d4af91f10e (Atomstack X20 Pro)" }

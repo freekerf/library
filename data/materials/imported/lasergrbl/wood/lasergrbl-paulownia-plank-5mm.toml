@@ -1,0 +1,15 @@
+id = "lasergrbl-paulownia-plank-5mm"
+name = "Paulownia Plank"
+category = "wood"
+thickness_mm = 5.0
+
+[[recipes]]
+id = "algo-alm-22bd-22w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 22.0 }
+speed_mm_min = 700
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "0ef4ce10-421c-4069-b39f-8432fbf7e39d (Algo ALM-22BD (22W))" }

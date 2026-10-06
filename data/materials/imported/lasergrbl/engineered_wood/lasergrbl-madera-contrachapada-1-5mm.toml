@@ -1,0 +1,16 @@
+id = "lasergrbl-madera-contrachapada-1-5mm"
+name = "Madera contrachapada"
+category = "engineered_wood"
+thickness_mm = 1.5
+
+[[recipes]]
+id = "leon3d-l40-5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 200
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "db7c65d2-3514-4232-8625-a3d291df9f7c (LEON3D L40 (5.5W))" }
+notes = "Importante: reducir la velocidad puede provocar llama"

@@ -1,0 +1,15 @@
+id = "lasergrbl-cuero-0-7mm"
+name = "Cuero"
+category = "leather"
+thickness_mm = 0.7
+
+[[recipes]]
+id = "leon3d-l40-5-5w-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 5.5 }
+speed_mm_min = 500
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 1
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "f7ca02a2-136c-4021-a065-7b7188be423a (LEON3D L40 (5.5W))" }

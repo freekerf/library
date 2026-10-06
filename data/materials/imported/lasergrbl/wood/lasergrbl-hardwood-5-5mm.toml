@@ -1,0 +1,15 @@
+id = "lasergrbl-hardwood-5-5mm"
+name = "Hardwood"
+category = "wood"
+thickness_mm = 5.5
+
+[[recipes]]
+id = "atomstack-m50-10w-a10-s10-x7-cut"
+operation = "cut"
+laser = { kind = "diode", power_w = 10.0 }
+speed_mm_min = 250
+power_min_pct = 100.0
+power_max_pct = 100.0
+passes = 2
+confidence = { level = "community" }
+source = { name = "LaserGRBL StandardMaterials.psh", url = "https://github.com/arkypita/LaserGRBL/blob/1f9337b3af27133f8b1696e41cc110f2af74d04f/LaserGRBL/StandardMaterials.psh", license = "GPL-3.0-or-later", reference = "2a3ce845-c598-4df3-bc38-0dbe864b0c23 (Atomstack M50 10W (A10/S10/X7))" }
